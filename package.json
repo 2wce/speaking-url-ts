@@ -18,7 +18,8 @@
     "format": "prettier --write .",
     "dev": "vite",
     "prebuild": "rm -rf dist",
-    "build": "yarn lint && yarn format && tsc && vite build",
+    "generate:types": "tsc",
+    "build": "yarn lint && yarn format && vite build && yarn generate:types",
     "preview": "vite preview"
   },
   "devDependencies": {
