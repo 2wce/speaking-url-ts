@@ -62,7 +62,6 @@ describe('getSlug create', () => {
       truncate: 15
     })
 
-    console.log('-----------trunc', getSlug('Foo* Foobar FooBarBaz'))
     expect(getSlug('Foo* Foobar FooBarBaz')).toBe('foo-foobar')
   })
 

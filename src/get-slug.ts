@@ -7,31 +7,41 @@ import {
   symbol_map,
   uric_characters,
   uric_no_slash_characters
-} from './dictionaries'
-import { escapeChars, isReplacedCustomChar } from './utils'
+} from './dictionaries.js'
+import { escapeChars, isReplacedCustomChar } from './utils.js'
 
-type Options =
-  | string
-  | {
-      lang?: string
-      maintainCase?: boolean
-      custom?: Record<string, any>
-      truncate?: number
-      uric?: boolean
-      uricNoSlash?: boolean
-      mark?: boolean
-      symbols?: boolean
-      separator?: string
-      titleCase?: any[] | boolean
-      onlyBase64?: boolean
-    }
+export type SlugOptions = {
+  // Specifies the language for symbol conversion. Defaults to 'en' (English).
+  lang?: string | boolean
+  // If true, maintains the original casing of the input string. Defaults to false.
+  maintainCase?: boolean
+  // An object of custom replacements where each key-value pair represents the character to be replaced and its replacement.
+  custom?: Record<string, string> | string[]
+  // A number indicating the maximum length of the resulting slug. The slug will be truncated to this length if specified.
+  truncate?: number | boolean
+  // If true, includes URI characters in the resulting slug.
+  uric?: boolean
+  // If true, includes URI characters except the slash ('/') in the resulting slug.
+  uricNoSlash?: boolean
+  // If true, includes URI fragment identifiers and query strings in the resulting slug.
+  mark?: boolean
+  // If false, disables symbol conversion. Defaults to true.
+  symbols?: boolean
+  // The character to use as a separator in the resulting slug. Defaults to '-'.
+  separator?: string
+  // If true or an array of strings, converts the slug to title case. If an array is provided, only the specified words are capitalized.
+  titleCase?: string[] | boolean
+  onlyBase64?: boolean
+}
+
+export type Options = string | SlugOptions
 
 /**
- * getSlug
- * @param  {string} input input string
- * @param  {object|string} opts config object or separator string/char
- * @api    public
- * @return {string}  sluggified string
+ * Transforms a given input string into a slug, applying various transformations based on the provided options.
+ *
+ * @param {string} input The input string to be transformed into a slug.
+ * @param {Options} [opts] Configuration options for slug generation
+ * @return {string} The generated slug.
  */
 export const getSlug = (input: string, opts?: Options) => {
   var separator = '-'
@@ -72,7 +82,8 @@ export const getSlug = (input: string, opts?: Options) => {
       opts.custom && typeof opts.custom === 'object'
         ? opts.custom
         : customReplacements
-    truncate = (opts?.truncate && opts.truncate > 1) || false
+    truncate =
+      (typeof opts?.truncate === 'number' && opts.truncate > 1) || false
     uricFlag = opts.uric || false
     uricNoSlashFlag = opts.uricNoSlash || false
     markFlag = opts.mark || false
@@ -92,14 +103,14 @@ export const getSlug = (input: string, opts?: Options) => {
     }
 
     symbol =
-      opts.lang && symbol_map[opts.lang] && convertSymbols
+      typeof opts.lang === 'string' && symbol_map[opts.lang] && convertSymbols
         ? symbol_map[opts.lang]
         : convertSymbols
           ? symbol_map.en
           : {}
 
     langChar =
-      opts.lang && language_character_map[opts.lang]
+      typeof opts.lang === 'string' && language_character_map[opts.lang]
         ? language_character_map[opts.lang]
         : opts.lang === 'false' || opts.lang === 'true'
           ? {}
@@ -121,11 +132,7 @@ export const getSlug = (input: string, opts?: Options) => {
     }
 
     // if custom config is an Array, rewrite to object format
-    if (
-      opts.custom &&
-      typeof opts.custom.length === 'number' &&
-      Array.prototype.toString.call(opts.custom)
-    ) {
+    if (Array.isArray(opts.custom)) {
       opts.custom.forEach(function (v: string) {
         customReplacements[v + ''] = v + ''
       })
