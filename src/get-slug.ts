@@ -78,10 +78,10 @@ export const getSlug = (input: string, opts?: Options) => {
 
   if (typeof opts === 'object') {
     maintainCase = opts.maintainCase || false
+    const customIsObject = typeof opts.custom === 'object'
     customReplacements =
-      opts.custom && typeof opts.custom === 'object'
-        ? opts.custom
-        : customReplacements
+      opts.custom && customIsObject ? opts.custom : customReplacements
+
     truncate =
       (typeof opts?.truncate === 'number' && opts.truncate > 1) || false
     uricFlag = opts.uric || false
@@ -144,6 +144,8 @@ export const getSlug = (input: string, opts?: Options) => {
 
       if (v.length > 1) {
         r = new RegExp('\\b' + escapeChars(v) + '\\b', 'gi')
+      } else if (customIsObject && /^\d$/.test(v)) {
+        r = ''
       } else {
         r = new RegExp(escapeChars(v), 'gi')
       }
