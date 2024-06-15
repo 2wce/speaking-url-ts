@@ -4,15 +4,15 @@ import { getSlug } from '../src/get-slug.js'
 describe('getSlug translate turkish letters', () => {
   it('umlaut should be single letter transliteration', () => {
     expect(
-      getSlug('ÜÄÖüäö', {
+      getSlug('ÜÄÖŞĞüäöşğ', {
         lang: 'tr'
       })
-    ).toBe('uaeouaeo')
+    ).toBe('uaeosuaeos')
 
     expect(
-      getSlug('ÜÖÄ äüö', {
+      getSlug('ÜÖÄŞĞ äüöşğ', {
         lang: 'tr'
       })
-    ).toBe('uoae-aeuo')
+    ).toBe('uoaesg-aeuosg')
   })
 })

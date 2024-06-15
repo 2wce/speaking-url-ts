@@ -13,6 +13,11 @@ describe('getSlug with custom replacement', () => {
     //     }
     //   })
     // ).toBe('буу')
+    expect(
+      getSlug('top 100 waterfalls', {
+        custom: ['.']
+      })
+    ).toBe('top-100-waterfalls')
 
     expect(
       getSlug('[nodejs]', {

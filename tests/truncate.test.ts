@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe('getSlug smart truncate', function () {
-  it('should maintain case characters, with smart truncate', function (done) {
+describe('getSlug smart truncate', () => {
+  it('should maintain case characters, with smart truncate', () => {
     expect(
       getSlug('Foobarbaz, Bar Baz', {
         truncate: 12
@@ -54,21 +54,18 @@ describe('getSlug smart truncate', function () {
 
     expect(
       getSlug('Foo Foo Bar Bar', {
-        // @ts-expect-error
         truncate: false
       })
     ).toBe('foo-foo-bar-bar')
 
     expect(
       getSlug('Foo Foo Bar Bar', {
-        // @ts-expect-error
         truncate: true
       })
     ).toBe('foo-foo-bar-bar')
 
     expect(
       getSlug('a Foo', {
-        // @ts-expect-error
         truncate: true
       })
     ).toBe('a-foo')
