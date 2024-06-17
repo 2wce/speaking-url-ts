@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
 describe('getSlug smart truncate', function () {
-  it('should maintain case characters, with smart truncate', function (done) {
+  it('should maintain case characters, with smart truncate', () => {
     expect(
       getSlug('Foobarbaz, Bar Baz', {
         truncate: 12

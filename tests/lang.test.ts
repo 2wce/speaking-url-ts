@@ -4,7 +4,7 @@ import { getSlug } from '../src/get-slug.js'
 describe('getSlug symbols', function () {
   'use strict'
 
-  it('should convert symbols', function (done) {
+  it('should convert symbols', () => {
     expect(getSlug('Foo & Bar | Baz')).toBe('foo-and-bar-or-baz')
 
     expect(
@@ -56,7 +56,7 @@ describe('getSlug symbols', function () {
     ).toBe('foo-a-bar-alebo-baz')
   })
 
-  it("shouldn't convert symbols", function (done) {
+  it("shouldn't convert symbols", () => {
     expect(
       getSlug('Foo & Bar | Baz', {
         symbols: false
@@ -113,7 +113,7 @@ describe('getSlug symbols', function () {
     ).toBe('foo-bar-baz')
   })
 
-  it('should not convert symbols with uric flag true', function (done) {
+  it('should not convert symbols with uric flag true', () => {
     expect(
       getSlug('Foo & Bar | Baz', {
         uric: true
@@ -169,7 +169,7 @@ describe('getSlug symbols', function () {
     ).toBe('foo-&-bar-alebo-baz')
   })
 
-  it('should not convert symbols with uricNoSlash flag true', function (done) {
+  it('should not convert symbols with uricNoSlash flag true', () => {
     expect(
       getSlug('Foo & Bar | Baz', {
         uricNoSlash: true
@@ -226,7 +226,7 @@ describe('getSlug symbols', function () {
     ).toBe('foo-&-bar-alebo-baz')
   })
 
-  it('should not convert symbols with mark flag true', function (done) {
+  it('should not convert symbols with mark flag true', () => {
     expect(
       getSlug('Foo (Bar) . Baz', {
         mark: true
@@ -283,7 +283,7 @@ describe('getSlug symbols', function () {
     ).toBe('foo-(bar)-.-baz')
   })
 
-  it('should convert symbols with flags true', function (done) {
+  it('should convert symbols with flags true', () => {
     expect(
       getSlug('Foo (♥) ; Baz=Bar', {
         lang: 'en',
@@ -360,7 +360,7 @@ describe('getSlug symbols', function () {
     )
   })
 
-  it('should replace symbols (de)', function (done) {
+  it('should replace symbols (de)', () => {
     expect(
       getSlug('Äpfel & Birnen', {
         lang: 'de'
@@ -375,7 +375,7 @@ describe('getSlug symbols', function () {
     ).toBe('AeOeUeaeoeuess')
   })
 
-  it('should replace chars by cs language standards', function (done) {
+  it('should replace chars by cs language standards', () => {
     expect(
       getSlug(
         'AaÁáBbCcČčDdĎďEeÉéĚěFfGgHhChchIiÍíJjKkLlMmNnŇňOoÓóPpQqRrŘřSsŠšTtŤťUuÚúŮůVvWwXxYyÝýZzŽž',
@@ -400,7 +400,7 @@ describe('getSlug symbols', function () {
     )
   })
 
-  it('should replace chars by se language standards', function (done) {
+  it('should replace chars by se language standards', () => {
     expect(
       getSlug('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzÅåÄäÖö', {
         lang: 'sv',
@@ -409,7 +409,7 @@ describe('getSlug symbols', function () {
     ).toBe('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaAaOo')
   })
 
-  it('should replace chars by fi language standards', function (done) {
+  it('should replace chars by fi language standards', () => {
     expect(
       getSlug('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzÅåÄäÖö', {
         lang: 'fi',
@@ -418,7 +418,7 @@ describe('getSlug symbols', function () {
     ).toBe('AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaAaOo')
   })
 
-  it('should replace chars by sk language standards', function (done) {
+  it('should replace chars by sk language standards', () => {
     expect(
       getSlug(
         'AaÁaÄäBbCcČčDdĎďDzdzDždžEeÉéFfGgHhChchIiÍíJjKkLlĹĺĽľMmNnŇňOoÓóÔôPpQqRrŔŕSsŠšTtŤťUuÚúVvWwXxYyÝýZzŽž',
@@ -443,7 +443,7 @@ describe('getSlug symbols', function () {
     )
   })
 
-  it('should ignore not available language param', function (done) {
+  it('should ignore not available language param', () => {
     expect(
       getSlug('Äpfel & Birnen', {
         lang: 'xx'
@@ -451,7 +451,7 @@ describe('getSlug symbols', function () {
     ).toBe('aepfel-and-birnen')
   })
 
-  it('should convert currency symbols to lowercase', function (done) {
+  it('should convert currency symbols to lowercase', () => {
     expect(
       getSlug('NEXUS4 only €199!', {
         maintainCase: false
@@ -471,7 +471,7 @@ describe('getSlug symbols', function () {
     ).toBe('nexus4-only-yen399-73')
   })
 
-  it('should convert currency symbols to uppercase', function (done) {
+  it('should convert currency symbols to uppercase', () => {
     expect(
       getSlug('NEXUS4 only €199!', {
         maintainCase: true

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
 describe('getSlug rfc3986', function () {
-  it('"uric" characters allowed', function (done) {
+  it('"uric" characters allowed', () => {
     const chars = [';', '?', ':', '@', '&', '=', '+', ',', '/']
 
     for (let i = 0; i < chars.length; i++) {
@@ -14,7 +14,7 @@ describe('getSlug rfc3986', function () {
     }
   })
 
-  it('"uricNoSlash" characters allowed', function (done) {
+  it('"uricNoSlash" characters allowed', () => {
     const chars = [';', '?', ':', '@', '&', '=', '+', ',']
 
     for (let i = 0; i < chars.length; i++) {
@@ -26,7 +26,7 @@ describe('getSlug rfc3986', function () {
     }
   })
 
-  it('"mark" characters allowed', function (done) {
+  it('"mark" characters allowed', () => {
     const chars = ['.', '!', '~', '*', "'", '(', ')']
 
     for (let i = 0; i < chars.length; i++) {
@@ -38,7 +38,7 @@ describe('getSlug rfc3986', function () {
     }
   })
 
-  it('"uric" characters allowed, separator ";"', function (done) {
+  it('"uric" characters allowed, separator ";"', () => {
     const chars = ['?', ':', '@', '&', '=', '+', ',', '/']
 
     for (let i = 0; i < chars.length; i++) {
@@ -51,7 +51,7 @@ describe('getSlug rfc3986', function () {
     }
   })
 
-  it('"uric" characters allowed, separator ";" included in input string', function (done) {
+  it('"uric" characters allowed, separator ";" included in input string', () => {
     expect(
       getSlug('foo ; bar baz', {
         uric: true,
@@ -60,7 +60,7 @@ describe('getSlug rfc3986', function () {
     ).toBe('foo;bar;baz')
   })
 
-  it('"uricNoSlash" characters allowed, separator ";"', function (done) {
+  it('"uricNoSlash" characters allowed, separator ";"', () => {
     const chars = ['?', ':', '@', '&', '=', '+', ',']
 
     for (let i = 0; i < chars.length; i++) {
@@ -73,7 +73,7 @@ describe('getSlug rfc3986', function () {
     }
   })
 
-  it('"uricNoSlash" characters allowed, separator ";" included in input string', function (done) {
+  it('"uricNoSlash" characters allowed, separator ";" included in input string', () => {
     expect(
       getSlug('foo ; bar baz', {
         uric: true,
@@ -82,7 +82,7 @@ describe('getSlug rfc3986', function () {
     ).toBe('foo;bar;baz')
   })
 
-  it('"mark" characters allowed, separator "."', function (done) {
+  it('"mark" characters allowed, separator "."', () => {
     const chars = ['!', '~', '*', "'", '(', ')']
 
     for (let i = 0; i < chars.length; i++) {
@@ -95,7 +95,7 @@ describe('getSlug rfc3986', function () {
     }
   })
 
-  it('"mark" characters allowed, separator "." included in input string', function (done) {
+  it('"mark" characters allowed, separator "." included in input string', () => {
     expect(
       getSlug('foo . bar baz', {
         uric: true,

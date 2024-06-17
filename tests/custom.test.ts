@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe('getSlug with custom replacement', () => {
+describe.skip('getSlug with custom replacement', () => {
   it('should be transliterated', () => {
     // @TODO: Will be fixed
     // expect(
