@@ -6,7 +6,7 @@ import { SlugOptions } from './get-slug.js'
  * @returns The escaped string.
  */
 export const escapeChars = (input: string) => {
-  return input.replace(/[-\\^$*+?.()|[\]{}/]/g, '\\$&')
+  return input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
 
 /**

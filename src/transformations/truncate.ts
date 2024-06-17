@@ -1,13 +1,20 @@
+import { escapeChars } from '../utils.js'
 import { Transformation } from './index.js'
 
 export const cleanupInput = (input: string, separator: string) => {
-  const cleanupInput = input
-    .replace(new RegExp(`\\s*${separator}\\s*`, 'g'), separator)
-    .replace(/\s+/g, separator)
-    .replace(new RegExp(`${separator}$`), '') // Remove trailing separator
+  // First, replace all whitespace with the separator
+  let cleanedInput = input.replace(/\s+/g, separator)
+
+  // Escape special characters in the separator
+  const escapedSeparator = escapeChars(separator)
+
+  cleanedInput = cleanedInput
+    .replace(new RegExp(`^${escapedSeparator}+`), '') // Remove leading separator
+    .replace(new RegExp(`${escapedSeparator}+$`), '') // Remove trailing separator
+    .replace(new RegExp(`(${escapedSeparator}|\\s)+`, 'g'), separator) // Replace internal separators/whitespace
     .trim()
 
-  return cleanupInput
+  return cleanedInput
 }
 
 export const truncate: Transformation = (input, { truncate, separator }) => {

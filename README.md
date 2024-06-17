@@ -40,7 +40,7 @@
 | maintain-case | ✅     |
 | persian       | ✅     |
 | rfc-3986      | ❌     |
-| separator     | ❌     |
+| separator     | ✅     |
 | speaking-url  | ❌     |
 | symbols       | ❌     |
 | title-case    | ❌     |
