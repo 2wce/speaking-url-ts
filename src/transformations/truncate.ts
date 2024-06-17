@@ -19,17 +19,14 @@ export const cleanupInput = (
   let allowedChars = DEFAULT_ALLOWED_CHARACTERS
 
   if (uric) {
-    // @ts-expect-error
     allowedChars += URIC_CHARACTERS
   }
 
   if (uricNoSlash) {
-    // @ts-expect-error
     allowedChars += URIC_NO_SLASH_CHARACTERS
   }
 
   if (mark) {
-    // @ts-expect-error
     allowedChars += MARK_CHARACTERS
   }
 
