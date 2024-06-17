@@ -142,7 +142,10 @@ export class Transformer {
       allowedChars += MARK_CHARACTERS
     }
 
-    allowedChars += separator
+    // Escape special characters in the separator
+    const escapedSeparator = escapeChars(separator as string)
+
+    allowedChars += escapedSeparator
 
     // escape all necessary chars
     allowedChars = escapeChars(allowedChars)

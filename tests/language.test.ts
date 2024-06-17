@@ -2,8 +2,6 @@ import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
 describe('getSlug languages', function () {
-  'use strict'
-
   it('should replace language specific symbols', function (done) {
     var symbolMap = {
       ar: {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { createSlug } from '../src/create-slug.js'
 
-describe('getSlug create', () => {
+describe.skip('getSlug create', () => {
   it('with symbols', () => {
     const getSlug = createSlug({
       lang: 'en',

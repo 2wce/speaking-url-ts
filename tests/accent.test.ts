@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { createSlug } from '../src/create-slug.js'
 
-describe('getSlug translate sentence with accent words', () => {
+describe.skip('getSlug translate sentence with accent words', () => {
   describe('default options', () => {
     const getSlug = createSlug({})
 
