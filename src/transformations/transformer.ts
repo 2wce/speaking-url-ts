@@ -24,14 +24,9 @@ export class Transformer {
 
   private preProcess = (
     input: string,
-    { custom = {}, titleCase, maintainCase, ...rest }: SlugOptions
+    { custom = {}, titleCase, ...rest }: SlugOptions
   ) => {
     input = input.trim()
-
-    // Convert input to lowercase if case isn't configured
-    if (!maintainCase && !titleCase) {
-      input = input.toLowerCase()
-    }
 
     // Convert custom config from Array to object format if necessary
     if (Array.isArray(custom)) {
@@ -99,6 +94,8 @@ export class Transformer {
       uricNoSlash,
       separator,
       mark,
+      maintainCase,
+      titleCase,
       ...rest
     }: SlugOptions
   ) => {
@@ -229,6 +226,11 @@ export class Transformer {
       )
     }
 
+    // Convert input to lowercase if case isn't configured
+    if (!maintainCase && !titleCase) {
+      result = result.toLowerCase()
+    }
+
     return {
       input: result,
       options: {
@@ -239,6 +241,8 @@ export class Transformer {
         uricNoSlash,
         separator,
         mark,
+        maintainCase,
+        titleCase,
         ...rest
       }
     }

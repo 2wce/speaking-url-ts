@@ -21,7 +21,31 @@
 
 ## Why
 
-## Compatibility
+## Tests
+
+| Tests         | Status |
+| ------------- | ------ |
+| accent        | ✅     |
+| arabic        | ✅     |
+| burmese       | ✅     |
+| create        | ❌     |
+| custom        | ❌     |
+| cyrillic      | ✅     |
+| defaults      | ❌     |
+| dhivehi       | ✅     |
+| georgien      | ✅     |
+| hungarian     | ✅     |
+| lang          | ❌     |
+| language      | ❌     |
+| maintain-case | ✅     |
+| persian       | ✅     |
+| rfc-3986      | ❌     |
+| separator     | ❌     |
+| speaking-url  | ❌     |
+| symbols       | ❌     |
+| title-case    | ❌     |
+| truncate      | ✅     |
+| turkish       | ❌     |
 
 ## Contributors
 
