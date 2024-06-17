@@ -42,7 +42,7 @@
 | rfc-3986      | ❌     |
 | separator     | ✅     |
 | speaking-url  | ❌     |
-| symbols       | ❌     |
+| symbols       | ✅     |
 | title-case    | ❌     |
 | truncate      | ✅     |
 | turkish       | ❌     |

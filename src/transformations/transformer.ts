@@ -219,6 +219,7 @@ export class Transformer {
         }
         lastCharWasSymbol = false
       }
+
       // add allowed chars
       result += current.replace(
         new RegExp('[^\\w\\s' + allowedChars + '_-]', 'g'),

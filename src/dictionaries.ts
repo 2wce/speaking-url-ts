@@ -1439,3 +1439,16 @@ export const URIC_NO_SLASH_CHARACTERS = [
 ].join('')
 
 export const MARK_CHARACTERS = ['.', '!', '~', '*', "'", '(', ')'].join('')
+
+export const DEFAULT_ALLOWED_CHARACTERS = [
+  'A',
+  '-',
+  'Z',
+  'a',
+  '-',
+  'z',
+  '0',
+  '-',
+  '9',
+  '_'
+].join('')
