@@ -7,7 +7,7 @@ describe('getSlug translate turkish letters', () => {
       getSlug('ÜÄÖŞĞüäöşğ', {
         lang: 'tr'
       })
-    ).toBe('uaeosuaeos')
+    ).toBe('uaeosguaeosg')
 
     expect(
       getSlug('ÜÖÄŞĞ äüöşğ', {

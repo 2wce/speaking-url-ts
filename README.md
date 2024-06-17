@@ -45,7 +45,7 @@
 | symbols       | ✅     |
 | title-case    | ❌     |
 | truncate      | ✅     |
-| turkish       | ❌     |
+| turkish       | ✅     |
 
 ## Contributors
 
