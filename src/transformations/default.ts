@@ -1,6 +1,8 @@
 import { Transformation } from './index.js'
 
-const REMOVE_DUPLICATE = /\s+/g
+// Regular expression to find consecutive separators
+const removeDuplicateSeparator = (separator: string) =>
+  new RegExp(`${separator}{2,}`, 'g')
 
 const findSeparator = (separator: string) => new RegExp(`\\${separator}+g`)
 
@@ -11,8 +13,10 @@ export const formatSeparators: Transformation = (
   input,
   { separator = '-' }
 ) => {
-  return input
-    .replace(REMOVE_DUPLICATE, separator)
+  const formattedInput = input
+    .replace(removeDuplicateSeparator(separator), separator)
     .replace(findSeparator(separator), separator)
     .replace(trimSeparator(separator), '')
+
+  return formattedInput
 }

@@ -18,8 +18,8 @@ export const applyTransformations = (
   input: string,
   config: SlugOptions
 ): string => {
-  console.log('config', { config })
   const transformer = new Transformer()
+
   Object.entries(config).forEach(
     ([transformationName, isConfiguredTransformation]) => {
       if (isConfiguredTransformation) {

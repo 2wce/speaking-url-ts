@@ -10,7 +10,7 @@ import {
 } from '../dictionaries.js'
 import { SlugOptions } from '../get-slug.js'
 import { escapeChars, isReplacedCustomChar } from '../utils.js'
-import { formatSeparators } from './default.js'
+import { transformations } from './index.js'
 
 type Transformation = (input: string, opts: SlugOptions) => string
 
@@ -20,7 +20,7 @@ const findWordInCustomObject = (word: string) =>
   new RegExp(`\\b${escapeChars(word)}\\b`, 'gi')
 
 export class Transformer {
-  private transformations: Transformation[] = [formatSeparators]
+  private transformations: Set<Transformation> = new Set()
 
   private preProcess = (
     input: string,
@@ -51,29 +51,39 @@ export class Transformer {
     }
 
     // Perform custom replacements
-    Object.entries(custom).forEach(([word, replacement]) => {
-      const regex =
-        word.length > 1
-          ? findWordInCustomObject(word)
-          : HAS_ONE_DIGIT.test(word)
-            ? new RegExp('') // Edge case for single digits
-            : new RegExp(escapeChars(word), 'gi')
+    if (Object.keys(custom).length > 0) {
+      Object.entries(custom).forEach(([word, replacement]) => {
+        const regex =
+          word.length > 1
+            ? findWordInCustomObject(word)
+            : HAS_ONE_DIGIT.test(word)
+              ? new RegExp('') // Edge case for single digits
+              : new RegExp(escapeChars(word), 'gi')
 
-      input = input.replace(regex, replacement)
-    })
+        input = input.replace(regex, replacement)
+      })
+    }
 
     return this.postProcess(input, { custom, titleCase, ...rest })
   }
 
   public addTransformation(transformation: Transformation): void {
-    this.transformations.push(transformation)
+    this.transformations.add(transformation)
   }
 
   public transform(input: string, opts: SlugOptions): string {
     const { input: processedInput, options: processedOptions } =
       this.preProcess(input, opts)
 
-    return this.transformations.reduce(
+    // if there's a transformation in options that isn't in this.transformations add it first
+    Object.keys(processedOptions).forEach((name) => {
+      const isValidTransformation = transformations[name]
+      if (typeof isValidTransformation === 'function') {
+        this.addTransformation(transformations[name])
+      }
+    })
+
+    return Array.from(this.transformations).reduce(
       (acc, transformation) => transformation(acc, processedOptions),
       processedInput
     )
@@ -95,9 +105,14 @@ export class Transformer {
     let lastCharWasSymbol = false
     let lastCharWasDiatric = false
     let diatricString = ''
-    let result = input
-    let ch = ''
+    let result = ''
+    let current = ''
     let allowedChars = ''
+
+    // add all custom replacement to allowed charlist
+    for (current in custom) {
+      allowedChars += current
+    }
 
     const convertSymbols = !(
       symbols === false ||
@@ -136,78 +151,79 @@ export class Transformer {
     allowedChars = escapeChars(allowedChars)
 
     for (let i = 0, l = input.length; i < l; i++) {
-      let current = input[i]
+      current = input[i]
+
       if (isReplacedCustomChar(current, custom as Record<string, string>)) {
         // don't convert a already converted char
         lastCharWasSymbol = false
       } else if (langChar[current]) {
         // process language specific diactrics chars conversion
-        ch =
-          lastCharWasSymbol && langChar[ch].match(/[A-Za-z0-9]/)
-            ? ' ' + langChar[ch]
-            : langChar[ch]
+        current =
+          lastCharWasSymbol && langChar[current].match(/[A-Za-z0-9]/)
+            ? ' ' + langChar[current]
+            : langChar[current]
         lastCharWasSymbol = false
       } else if (current in CHARACTER_MAP) {
         // the transliteration changes entirely when some special characters are added
         if (i + 1 < l && LOOK_AHEAD_CHAR_ARRAY.indexOf(input[i + 1]) >= 0) {
-          diatricString += ch
-          ch = ''
+          diatricString += current
+          current = ''
         } else if (lastCharWasDiatric === true) {
-          ch = DIATRIC_MAP[diatricString] + CHARACTER_MAP[ch]
+          current = DIATRIC_MAP[diatricString] + CHARACTER_MAP[current]
           diatricString = ''
         } else {
           // process diactrics chars
-          ch =
-            lastCharWasSymbol && CHARACTER_MAP[ch].match(/[A-Za-z0-9]/)
-              ? ' ' + CHARACTER_MAP[ch]
-              : CHARACTER_MAP[ch]
+          current =
+            lastCharWasSymbol && CHARACTER_MAP[current].match(/[A-Za-z0-9]/)
+              ? ' ' + CHARACTER_MAP[current]
+              : CHARACTER_MAP[current]
         }
         lastCharWasSymbol = false
         lastCharWasDiatric = false
-      } else if (ch in DIATRIC_MAP) {
-        diatricString += ch
-        ch = ''
+      } else if (current in DIATRIC_MAP) {
+        diatricString += current
+        current = ''
         // end of string, put the whole meaningful word
         if (i === l - 1) {
-          ch = DIATRIC_MAP[diatricString]
+          current = DIATRIC_MAP[diatricString]
         }
         lastCharWasDiatric = true
       } else if (
         // process symbol chars
-        symbol[ch] &&
-        !(uric && URIC_CHARACTERS.indexOf(ch) !== -1) &&
+        symbol[current] &&
+        !(uric && URIC_CHARACTERS.indexOf(current) !== -1) &&
         !(
           uricNoSlash &&
           URIC_NO_SLASH_CHARACTERS
             // .indexOf(ch) !== -1) && !(markFlag && markChars
-            .indexOf(ch) !== -1
+            .indexOf(current) !== -1
         )
       ) {
-        ch =
+        current =
           lastCharWasSymbol || result.substr(-1).match(/[A-Za-z0-9]/)
-            ? separator + symbol[ch]
-            : symbol[ch]
-        ch +=
+            ? separator + symbol[current]
+            : symbol[current]
+        current +=
           input[i + 1] !== void 0 && input[i + 1].match(/[A-Za-z0-9]/)
             ? separator
             : ''
         lastCharWasSymbol = true
       } else {
         if (lastCharWasDiatric === true) {
-          ch = DIATRIC_MAP[diatricString] + ch
+          current = DIATRIC_MAP[diatricString] + current
           diatricString = ''
           lastCharWasDiatric = false
         } else if (
           lastCharWasSymbol &&
-          (/[A-Za-z0-9]/.test(ch) || result.substr(-1).match(/A-Za-z0-9]/))
+          (/[A-Za-z0-9]/.test(current) || result.substr(-1).match(/A-Za-z0-9]/))
         ) {
           // process latin chars
-          ch = ' ' + ch
+          current = ' ' + current
         }
         lastCharWasSymbol = false
       }
       // add allowed chars
-      result += ch.replace(
+      result += current.replace(
         new RegExp('[^\\w\\s' + allowedChars + '_-]', 'g'),
         separator as string
       )
