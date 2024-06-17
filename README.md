@@ -39,9 +39,9 @@
 | language      | ❌     |
 | maintain-case | ✅     |
 | persian       | ✅     |
-| rfc-3986      | ❌     |
+| rfc-3986      | ✅     |
 | separator     | ✅     |
-| speaking-url  | ❌     |
+| speaking-url  | ✅     |
 | symbols       | ✅     |
 | title-case    | ❌     |
 | truncate      | ✅     |
