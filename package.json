@@ -37,8 +37,8 @@
     "test": "vitest",
     "test:ci": "vitest run",
     "coverage": "vitest run --coverage",
-    "lint": "eslint .",
-    "format": "prettier --write .",
+    "lint": "biome check",
+    "format": "biome format --write",
     "dev": "vite",
     "prebuild": "rm -rf dist",
     "generate:types": "tsc",
@@ -46,20 +46,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.3",
-    "@eslint/js": "9.4.0",
+    "@biomejs/biome": "1.8.1",
+    "@changesets/cli": "2.27.5",
     "@types/node": "20.14.2",
     "@vitest/coverage-v8": "^1.6.0",
-    "eslint": "9.4.0",
     "globals": "15.4.0",
-    "prettier": "3.2.5",
     "typescript": "5.4.5",
-    "vite": "5.2.13",
+    "vite": "5.3.1",
     "vitest": "1.6.0"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "none"
   }
 }

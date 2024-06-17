@@ -7,6 +7,21 @@ on:
     branches: [main]
 
 jobs:
+  biome:
+    name: runner / Biome
+    # Only run on push to branch other than main
+    if: github.event_name == 'push' && github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mongolyy/reviewdog-action-biome@v1
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          reporter: github-pr-review
+
   test:
     runs-on: ubuntu-latest
 

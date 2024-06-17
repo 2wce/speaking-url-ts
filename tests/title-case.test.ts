@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe.skip('getSlug titleCase', function () {
-  it('should title-case the characters', function (done) {
+describe.skip('getSlug titleCase', () => {
+  it('should title-case the characters', () => {
     expect(
       getSlug('This is big foo', {
         titleCase: true
@@ -22,7 +22,7 @@ describe.skip('getSlug titleCase', function () {
     ).toBe('Don-t-Drink-And-Drive')
   })
 
-  it('should title-case the characters with custom array', function (done) {
+  it('should title-case the characters with custom array', () => {
     expect(
       getSlug('This is yet foo and bar', {
         titleCase: ['and', 'yet']

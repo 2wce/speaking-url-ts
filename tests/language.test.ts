@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe('getSlug languages', function () {
-  it('should replace language specific symbols', function (done) {
-    var symbolMap = {
+describe('getSlug languages', () => {
+  it('should replace language specific symbols', () => {
+    let symbolMap = {
       ar: {
         '∆': 'delta',
         '∞': 'la-nihaya',
@@ -197,9 +197,9 @@ describe('getSlug languages', function () {
       }
     }
 
-    Object.keys(symbolMap).forEach(function (l) {
-      Object.keys(symbolMap[l]).forEach(function (s) {
-        var k = symbolMap[l][s]
+    Object.keys(symbolMap).forEach((l) => {
+      Object.keys(symbolMap[l]).forEach((s) => {
+        let k = symbolMap[l][s]
 
         expect(
           getSlug('Foo ' + s + ' Bar', {
