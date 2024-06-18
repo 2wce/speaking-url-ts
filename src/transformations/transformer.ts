@@ -106,9 +106,9 @@ export class Transformer {
     let current = ''
     let allowedChars = ''
 
-    // add all custom replacement to allowed charlist
-    for (current in custom) {
-      allowedChars += current
+    if (custom && Object.keys(custom).length > 0) {
+      // Add custom characters to allowed characters
+      allowedChars += escapeChars(Object.values(custom).join(''))
     }
 
     const convertSymbols = !(

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe('getSlug defaults', function () {
+describe('getSlug defaults', () => {
   it('should replace whitespaces with separator', () => {
     expect(getSlug('foo bar baz')).toBe('foo-bar-baz')
   })

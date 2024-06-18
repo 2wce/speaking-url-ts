@@ -1,6 +1,7 @@
 import { Transformation } from './index.js'
 
 const FIND_FIRST_CHAR_AND_REST_OF_WORD = /(\w)(\S*)/g
+
 /**
  * Converts the input string to title case, with an option to apply custom case transformations.
  * */
@@ -14,12 +15,11 @@ export const titleCase: Transformation = (
       FIND_FIRST_CHAR_AND_REST_OF_WORD,
       (_, firstChar, rest) => {
         // Capitalize the first character and append the rest of the word
-        const word = firstChar.toUpperCase() + (rest !== null ? rest : '')
+        const word = firstChar.toUpperCase() + rest
+        const lowerCaseWord = word.toLowerCase()
 
-        // Check if the word is in the custom transformations list
-        return Object.keys(custom).indexOf(word.toLowerCase()) < 0
-          ? word // If not, return the word in title case
-          : word.toLowerCase() // If it is, apply the custom transformation
+         // Apply custom transformation if the word is in the custom object, otherwise return the word in title case
+         return custom.hasOwnProperty(lowerCaseWord) ? (custom as Record<string, string>)[lowerCaseWord] : word
       }
     )
   }

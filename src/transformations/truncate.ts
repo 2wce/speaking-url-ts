@@ -1,50 +1,5 @@
-import {
-  DEFAULT_ALLOWED_CHARACTERS,
-  MARK_CHARACTERS,
-  URIC_CHARACTERS,
-  URIC_NO_SLASH_CHARACTERS
-} from '../dictionaries.js'
-import { SlugOptions } from '../get-slug.js'
-import { escapeChars } from '../utils.js'
+import { cleanupInput } from '../utils.js'
 import { Transformation } from './index.js'
-
-export const cleanupInput = (
-  input: string,
-  { separator = '-', uric, uricNoSlash, mark }: SlugOptions
-) => {
-  // Escape special characters in the separator
-  const escapedSeparator = escapeChars(separator)
-
-  // Base64 characters and separator are always allowed
-  let allowedChars = DEFAULT_ALLOWED_CHARACTERS
-
-  if (uric) {
-    allowedChars += URIC_CHARACTERS
-  }
-
-  if (uricNoSlash) {
-    allowedChars += URIC_NO_SLASH_CHARACTERS
-  }
-
-  if (mark) {
-    allowedChars += MARK_CHARACTERS
-  }
-
-  //  replace all whitespace with the separator
-  let cleanedInput = input.replace(/\s+/g, separator)
-
-  // Build the regex pattern dynamically to include allowed characters and separator
-  const regexPattern = `[^${allowedChars}${escapedSeparator === '-' ? '\\-' : escapedSeparator}]`
-
-  cleanedInput = cleanedInput
-    .replace(new RegExp(regexPattern, 'g'), separator) // Replace disallowed characters with separator
-    .replace(new RegExp(`^${escapedSeparator}+`), '') // Remove leading separator
-    .replace(new RegExp(`${escapedSeparator}+$`), '') // Remove trailing separator
-    .replace(new RegExp(`(${escapedSeparator}|\\s)+`, 'g'), separator) // Replace internal separators/whitespace
-    .trim()
-
-  return cleanedInput
-}
 
 export const truncate: Transformation = (
   input,
