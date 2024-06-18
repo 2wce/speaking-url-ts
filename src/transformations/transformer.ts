@@ -38,10 +38,17 @@ export class Transformer {
 
     // Handle titleCase conversion if it's an array
     if (Array.isArray(titleCase)) {
+      // Create a new object that is a copy of `custom`
+      const customCopy = { ...custom }
+
       custom = titleCase.reduce<Record<string, string>>((acc, cur) => {
         acc[cur] = cur
         return acc
-      }, custom)
+      }, customCopy)
+      titleCase = true
+    }
+
+    if (typeof titleCase === 'object') {
       titleCase = true
     }
 
@@ -67,8 +74,10 @@ export class Transformer {
   }
 
   public transform(input: string, opts: SlugOptions): string {
+    const clonedConfig = { ...opts }
+
     const { input: processedInput, options: processedOptions } =
-      this.preProcess(input, opts)
+      this.preProcess(input, clonedConfig)
 
     // if there's a transformation in options that isn't in this.transformations add it first
     Object.keys(processedOptions).forEach((name) => {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe.skip('getSlug titleCase', () => {
+describe('getSlug titleCase', () => {
   it('should title-case the characters', () => {
     expect(
       getSlug('This is big foo', {

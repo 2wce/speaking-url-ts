@@ -1,5 +1,10 @@
-import { DEFAULT_ALLOWED_CHARACTERS, MARK_CHARACTERS, URIC_CHARACTERS, URIC_NO_SLASH_CHARACTERS } from './dictionaries.js';
-import { SlugOptions } from './get-slug.js';
+import {
+  DEFAULT_ALLOWED_CHARACTERS,
+  MARK_CHARACTERS,
+  URIC_CHARACTERS,
+  URIC_NO_SLASH_CHARACTERS
+} from './dictionaries.js'
+import { SlugOptions } from './get-slug.js'
 
 /**
  * Escapes special characters in a string for use in a regular expression.
@@ -8,7 +13,7 @@ import { SlugOptions } from './get-slug.js';
  */
 export const escapeChars = (input: string) => {
   // Escape all special characters except hyphen
-  return input.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+  return input.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
 }
 
 /**

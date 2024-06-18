@@ -11,15 +11,20 @@ export const titleCase: Transformation = (
 ) => {
   if (titleCase) {
     // Use a regular expression to match the first character of each word and the rest of the word separately
-    return input.replace(
+    input = input.replace(
       FIND_FIRST_CHAR_AND_REST_OF_WORD,
       (_, firstChar, rest) => {
         // Capitalize the first character and append the rest of the word
         const word = firstChar.toUpperCase() + rest
         const lowerCaseWord = word.toLowerCase()
 
-         // Apply custom transformation if the word is in the custom object, otherwise return the word in title case
-         return custom.hasOwnProperty(lowerCaseWord) ? (custom as Record<string, string>)[lowerCaseWord] : word
+        const output =
+          lowerCaseWord in custom
+            ? (custom as Record<string, string>)[lowerCaseWord]
+            : word
+
+        // Apply custom transformation if the word is in the custom object, otherwise return the word in title case
+        return output
       }
     )
   }
