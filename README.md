@@ -25,11 +25,11 @@
 
 | Tests         | Status |
 | ------------- | ------ |
-| accent        | ❌     |
+| accent        | ✅     |
 | arabic        | ✅     |
 | burmese       | ✅     |
 | create        | ❌     |
-| custom        | ❌     |
+| custom        | ✅     |
 | cyrillic      | ✅     |
 | defaults      | ✅     |
 | dhivehi       | ✅     |
@@ -43,7 +43,7 @@
 | separator     | ✅     |
 | speaking-url  | ✅     |
 | symbols       | ✅     |
-| title-case    | ❌     |
+| title-case    | ✅     |
 | truncate      | ✅     |
 | turkish       | ✅     |
 
