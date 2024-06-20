@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe('getSlug rfc3986', function () {
+describe('getSlug rfc3986', () => {
   it('"uric" characters allowed', () => {
     const chars = [';', '?', ':', '@', '&', '=', '+', ',', '/']
 

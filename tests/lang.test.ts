@@ -1,8 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe('getSlug symbols', function () {
-  'use strict'
+describe('getSlug symbols', () => {
 
   it('should convert symbols', () => {
     expect(getSlug('Foo & Bar | Baz')).toBe('foo-and-bar-or-baz')

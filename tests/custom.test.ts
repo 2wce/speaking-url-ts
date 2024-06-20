@@ -1,18 +1,23 @@
 import { describe, expect, it } from 'vitest'
 import { getSlug } from '../src/get-slug.js'
 
-describe.skip('getSlug with custom replacement', () => {
+describe('getSlug with custom replacement', () => {
   it('should be transliterated', () => {
-    // @TODO: Will be fixed
-    // expect(
-    //   getSlug('буу', {
-    //     lang: 'false',
-    //     custom: {
-    //       б: 'б',
-    //       у: 'у'
-    //     }
-    //   })
-    // ).toBe('буу')
+    expect(
+      getSlug('буу', {
+        lang: false,
+        custom: {
+            'б': 'б',
+            'у': 'у'
+        }
+      })
+    ).toBe('буу')
+
+    expect(
+      getSlug('top 100 waterfalls', {
+        custom: ['.']
+      })
+    ).toBe('top-100-waterfalls')
 
     expect(
       getSlug('[nodejs]', {
@@ -76,13 +81,13 @@ describe.skip('getSlug with custom replacement', () => {
       })
     ).toBe('[Knoepfe]')
 
-    // @TODO: Will be fixed
-    // expect(
-    //   getSlug('[Knöpfe haben Löcher]', {
-    //     titleCase: 'true',
-    //     custom: ['[', ']']
-    //   })
-    // ).toBe('[Knoepfe-Haben-Loecher]')
+    expect(
+      getSlug('[Knöpfe haben Löcher]', {
+        // @ts-expect-error
+        titleCase: 'true',
+        custom: ['[', ']']
+      })
+    ).toBe('[Knoepfe-Haben-Loecher]')
 
     expect(
       getSlug('[knöpfe haben runde löcher]', {

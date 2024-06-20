@@ -1,7 +1,7 @@
 /**
  * charMap
  */
-export const character_map: Record<string, string> = {
+export const CHARACTER_MAP: Record<string, string> = {
   // latin
   À: 'A',
   Á: 'A',
@@ -852,7 +852,7 @@ export const character_map: Record<string, string> = {
  * special look ahead character array
  * These characters form with consonants to become 'single'/consonant combo
  */
-export const look_ahead_char_array = [
+export const LOOK_AHEAD_CHAR_ARRAY = [
   // burmese
   '်',
 
@@ -863,7 +863,7 @@ export const look_ahead_char_array = [
 /**
  * diatricMap for languages where transliteration changes entirely as more diatrics are added
  */
-export const diatric_map: Record<string, string> = {
+export const DIATRIC_MAP: Record<string, string> = {
   // Burmese
   // dependent vowels
   'ာ': 'a',
@@ -926,7 +926,7 @@ export const diatric_map: Record<string, string> = {
 /**
  * langCharMap language specific characters translations
  */
-export const language_character_map: Record<string, Record<string, string>> = {
+export const LANGUAGE_CHARACTER_MAP: Record<string, Record<string, string>> = {
   en: {}, // default language
 
   az: {
@@ -1103,7 +1103,7 @@ export const language_character_map: Record<string, Record<string, string>> = {
  * symbolMap language specific symbol translations
  * translations must be transliterated already
  */
-export const symbol_map: Record<string, Record<string, string>> = {
+export const SYMBOL_MAP: Record<string, Record<string, string>> = {
   ar: {
     '∆': 'delta',
     '∞': 'la-nihaya',
@@ -1413,7 +1413,7 @@ export const symbol_map: Record<string, Record<string, string>> = {
   }
 }
 
-export const uric_characters = [
+export const URIC_CHARACTERS = [
   ';',
   '?',
   ':',
@@ -1426,7 +1426,7 @@ export const uric_characters = [
   '/'
 ].join('')
 
-export const uric_no_slash_characters = [
+export const URIC_NO_SLASH_CHARACTERS = [
   ';',
   '?',
   ':',
@@ -1438,4 +1438,6 @@ export const uric_no_slash_characters = [
   ','
 ].join('')
 
-export const mark_characters = ['.', '!', '~', '*', "'", '(', ')'].join('')
+export const MARK_CHARACTERS = ['.', '!', '~', '*', "'", '(', ')'].join('')
+
+export const DEFAULT_ALLOWED_CHARACTERS = 'A-Za-z0-9_\\-/*'
