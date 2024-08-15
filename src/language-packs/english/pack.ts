@@ -1,16 +1,13 @@
 import type { LanguagePack } from '../../types.js'
 
 export const englishLanguagePack: LanguagePack = {
-  transliterations: {
-    // English doesn't require transliterations
-  },
-  replacements: {
-    '&': 'and', // Replace ampersand with 'and'
-    '@': 'at', // Replace @ with 'at'
-    '%': 'percent', // Replace % with 'percent'
-    '©': 'c', // Replace copyright symbol with 'c'
-    '®': 'r', // Replace registered trademark symbol with 'r'
-    '™': 'tm', // Replace trademark symbol with 'tm'
+  symbols: {
+    '&': 'and',
+    '@': 'at',
+    '%': 'percent',
+    '©': 'c',
+    '®': 'r',
+    '™': 'tm',
     '∆': 'delta',
     '∞': 'infinity',
     '♥': 'love',

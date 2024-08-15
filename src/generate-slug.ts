@@ -74,7 +74,7 @@ export function generateSlug(input: string, options: Options): string {
   }
 
   // Apply replacements if defined in the language pack
-  if (languagePack.replacements) {
+  if (languagePack.symbols) {
     slug = applyReplacements(slug, languagePack)
   }
 

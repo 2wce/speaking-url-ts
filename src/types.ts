@@ -8,8 +8,7 @@ export interface ReplacementMap {
 
 export interface LanguagePack {
   transliterations?: TransliterationMap // Optional transliteration map for character-to-character replacements
-  replacements?: ReplacementMap // Optional replacement map for specific characters or phrases
-  stopWords?: string[] // Optional array of stop words to be removed
+  symbols?: ReplacementMap // Optional replacement map for symbol-to-text replacements
   customRules?: Array<(text: string) => string> // Optional array of custom transformation functions
 }
 
