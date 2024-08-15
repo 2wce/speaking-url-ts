@@ -6,8 +6,13 @@ export const applyTransliterations = (
 ): string => {
   const transliterations = languagePack.transliterations ?? {}
 
+  const escapeRegExp = (string: string): string => {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  }
+
   for (const [key, value] of Object.entries(transliterations)) {
-    const regex = new RegExp(key, 'g')
+    const escapedKey = escapeRegExp(key)
+    const regex = new RegExp(escapedKey, 'g')
     text = text.replace(regex, value)
   }
 

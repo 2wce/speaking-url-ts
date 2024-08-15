@@ -4,7 +4,7 @@ export const applyReplacements = (
   text: string,
   languagePack: LanguagePack
 ): string => {
-  const replacements = languagePack.replacements ?? {}
+  const replacements = languagePack.symbols ?? {}
 
   const escapeRegExp = (string: string): string => {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
