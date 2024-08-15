@@ -1,0 +1,31 @@
+{
+  "name": "ts-lib-starter",
+  "version": "1.0.0",
+  "description": "An opinionated TS Lib Starter",
+  "main": "src/index.ts",
+  "author": {
+    "name": "Kudakwashe Mupeni",
+    "email": "said.coyness-0m@icloud.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "release": "changeset publish",
+    "test": "vitest",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "dev": "vite",
+    "build": "yarn lint && yarn format && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@changesets/cli": "2.27.7",
+    "@types/node": "22.2.0",
+    "typescript": "5.5.4",
+    "vite": "5.4.0",
+    "vitest": "2.0.5"
+  }
+}
