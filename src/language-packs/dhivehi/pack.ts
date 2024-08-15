@@ -1,0 +1,61 @@
+import type { LanguagePack } from '../../types.js'
+
+export const dhivehiLanguagePack: LanguagePack = {
+  transliterations: {
+    ހ: 'h',
+    ށ: 'sh',
+    ނ: 'n',
+    ރ: 'r',
+    ބ: 'b',
+    ޅ: 'lh',
+    ކ: 'k',
+    އ: 'a',
+    ވ: 'v',
+    މ: 'm',
+    ފ: 'f',
+    ދ: 'dh',
+    ތ: 'th',
+    ލ: 'l',
+    ގ: 'g',
+    ޏ: 'gn',
+    ސ: 's',
+    ޑ: 'd',
+    ޒ: 'z',
+    ޓ: 't',
+    ޔ: 'y',
+    ޕ: 'p',
+    ޖ: 'j',
+    ޗ: 'ch',
+    ޘ: 'tt',
+    ޙ: 'hh',
+    ޚ: 'kh',
+    ޛ: 'th',
+    ޜ: 'z',
+    ޝ: 'sh',
+    ޞ: 's',
+    ޟ: 'd',
+    ޠ: 't',
+    ޡ: 'z',
+    ޢ: 'a',
+    ޣ: 'gh',
+    ޤ: 'q',
+    ޥ: 'w',
+    'ަ': 'a',
+    'ާ': 'aa',
+    'ި': 'i',
+    'ީ': 'ee',
+    'ު': 'u',
+    'ޫ': 'oo',
+    'ެ': 'e',
+    'ޭ': 'ey',
+    'ޮ': 'o',
+    'ޯ': 'oa',
+    'ް': ''
+  },
+  customRules: [
+    // Example custom rule to handle double hyphens
+    (text: string) => text.replace(/--+/g, '-'),
+    // Example rule to trim dashes from the beginning or end of the slug
+    (text: string) => text.replace(/(^-+)|(-+$)/g, '')
+  ]
+}
