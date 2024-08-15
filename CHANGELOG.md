@@ -1,5 +1,11 @@
 # speaking-url-ts
 
+## 0.3.0
+
+### Minor Changes
+
+- 069db0c: chore: fix build
+
 ## 0.2.0
 
 ### Minor Changes
