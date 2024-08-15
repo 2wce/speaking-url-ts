@@ -2,13 +2,13 @@ import { LanguagePack } from '../types.js'
 import { arabicLanguagePack } from './arabic/pack.js'
 import { burmeseLanguagePack } from './burmese/pack.js'
 //import { czechLanguagePack } from './czech/pack.js'
-import { georgienLanguagePack } from './georgien/pack.js'
 import { dhivehiLanguagePack } from './dhivehi/pack.js'
 import { englishLanguagePack } from './english/pack.js'
+import { georgienLanguagePack } from './georgien/pack.js'
+import { hindiLanguagePack } from './hindi/pack.js'
 import { hungarianLanguagePack } from './hungarian/pack.js'
 import { persianLanguagePack } from './persian/pack.js'
 import { turkishLanguagePack } from './turkish/pack.js'
-import { hindiLanguagePack } from './hindi/pack.js'
 
 const packs = {
   ar: arabicLanguagePack,

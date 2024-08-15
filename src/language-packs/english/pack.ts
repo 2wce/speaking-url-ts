@@ -15,7 +15,7 @@ export const englishLanguagePack: LanguagePack = {
     '<': 'less than',
     '>': 'greater than',
     '∑': 'sum',
-    '¤': 'currency',
+    '¤': 'currency'
   },
   customRules: [
     // Example custom rule to handle double hyphens

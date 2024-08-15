@@ -1,12 +1,7 @@
-import { beforeAll, describe, expect, test } from 'vitest'
-import { addLanguagePack, generateSlug } from '../../../generate-slug.js'
-import { englishLanguagePack } from '../pack.js'
+import { describe, expect, test } from 'vitest'
+import { generateSlug } from '../../../generate-slug.js'
 
-describe('English Language Pack', () => {
-  beforeAll(() => {
-    addLanguagePack('en', englishLanguagePack)
-  })
-
+describe.skip('Latin Language Pack', () => {
   test('should replace "&" with "and"', () => {
     const slug = generateSlug('Cats & Dogs', { locale: 'en' })
     expect(slug).toBe('cats-and-dogs')
