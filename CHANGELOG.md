@@ -1,5 +1,11 @@
 # speaking-url-ts
 
+## 0.4.0
+
+### Minor Changes
+
+- 18bcc91: feat: add support for new languages
+
 ## 0.3.0
 
 ### Minor Changes
