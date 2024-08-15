@@ -8,12 +8,12 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     strategy:
       matrix:
         # Run the steps below with the following versions of Node.js
-        node-version: [22.x]
+        node-version: [20.x, 22.x]
 
     steps:
       # Fetch the latest commit
@@ -26,9 +26,18 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+
       # Install package dependencies
       - name: Install
         run: yarn install --frozen-lockfile
+
+      # Run build
+      - name: Build
+        run: yarn build
 
       # Run tests
       - name: Test
@@ -40,8 +49,6 @@ jobs:
       #     github-token: ${{ secrets.GITHUB_TOKEN }}
 
   release:
-    permissions:
-      contents: write
     strategy:
       matrix:
         # Run the steps below with the following versions of Node.js
@@ -49,7 +56,7 @@ jobs:
 
     # Only release on push to main
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     # Waits for test jobs for each Node.js version to complete
     needs: [test]
@@ -66,16 +73,14 @@ jobs:
 
       # Install package dependencies
       - name: Install
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
-      - name: Create Release Pull Request
+      - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
-        # @TODO: Uncomment below to release to npm
-        # with:
-        #   # This expects you to have a script called release which does a build for your packages and calls changeset publish
-        #   publish: yarn release
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          publish: yarn release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          # @TODO: Uncomment below to release to npm
-          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

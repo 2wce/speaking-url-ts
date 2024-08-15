@@ -1,12 +1,12 @@
-# Contributing to ts-lib-starter
+# Contributing to speaking-url-ts
 
-Thank you for considering contributing to ts-lib-starter! We appreciate your interest in helping make this project better.
+Thank you for considering contributing to speaking-url-ts! We appreciate your interest in helping make this project better.
 
 ## How Can I Contribute?
 
 There are several ways you can contribute to this project:
 
-1. **Reporting Bugs**: If you encounter a bug while using ts-lib-starter, please open an issue on our GitHub repository, providing as much detail as possible, including steps to reproduce the bug.
+1. **Reporting Bugs**: If you encounter a bug while using speaking-url-ts, please open an issue on our GitHub repository, providing as much detail as possible, including steps to reproduce the bug.
 
 2. **Suggesting Enhancements**: If you have ideas for enhancements or new features, please open an issue on our GitHub repository to discuss them.
 
