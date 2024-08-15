@@ -5,7 +5,7 @@ import { LanguagePack } from '../src/types.js'
 describe('applyReplacements', () => {
   it('should apply replacements correctly', () => {
     const languagePack: LanguagePack = {
-      replacements: {
+      symbols: {
         '&': 'and',
         '@': 'at'
       }
@@ -19,7 +19,7 @@ describe('applyReplacements', () => {
 
   it('should handle empty replacements', () => {
     const languagePack: LanguagePack = {
-      replacements: {}
+      symbols: {}
     }
 
     const input = 'hello world'
@@ -30,7 +30,7 @@ describe('applyReplacements', () => {
 
   it('should handle text with no matching replacements', () => {
     const languagePack: LanguagePack = {
-      replacements: {
+      symbols: {
         '&': 'and',
         '@': 'at'
       }
@@ -44,7 +44,7 @@ describe('applyReplacements', () => {
 
   it('should apply multiple replacements', () => {
     const languagePack: LanguagePack = {
-      replacements: {
+      symbols: {
         '&': 'and',
         '@': 'at',
         '#': 'number'
@@ -59,7 +59,7 @@ describe('applyReplacements', () => {
 
   it('should apply replacements case insensitively', () => {
     const languagePack: LanguagePack = {
-      replacements: {
+      symbols: {
         HELLO: 'hi'
       }
     }
