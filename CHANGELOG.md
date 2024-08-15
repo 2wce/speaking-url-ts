@@ -1,5 +1,11 @@
 # speaking-url-ts
 
+## 0.2.0
+
+### Minor Changes
+
+- 5c9897c: chore: update package info
+
 ## 0.1.0
 
 ### Minor Changes
