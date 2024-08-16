@@ -1,5 +1,11 @@
 # speaking-url-ts
 
+## 0.5.0
+
+### Minor Changes
+
+- b008e3e: add readme
+
 ## 0.4.0
 
 ### Minor Changes
