@@ -1,4 +1,5 @@
 import type { LanguagePack } from '../../types.js'
+import { customRules } from '../custom-rules.js'
 
 export const czechLanguagePack: LanguagePack = {
   transliterations: {
@@ -21,10 +22,5 @@ export const czechLanguagePack: LanguagePack = {
     Ů: 'U',
     Ž: 'Z'
   },
-  customRules: [
-    // Example custom rule to handle double hyphens
-    (text: string) => text.replace(/--+/g, '-'),
-    // Example rule to trim dashes from the beginning or end of the slug
-    (text: string) => text.replace(/(^-+)|(-+$)/g, '')
-  ]
+  customRules: [...customRules]
 }
