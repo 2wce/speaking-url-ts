@@ -1,5 +1,11 @@
 # speaking-url-ts
 
+## 0.6.0
+
+### Minor Changes
+
+- 0afbab3: feat: cleanup rules & add nordic languages
+
 ## 0.5.0
 
 ### Minor Changes
