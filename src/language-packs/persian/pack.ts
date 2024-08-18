@@ -1,4 +1,5 @@
 import type { LanguagePack } from '../../types.js'
+import { customRules } from '../custom-rules.js'
 
 export const persianLanguagePack: LanguagePack = {
   transliterations: {
@@ -22,10 +23,5 @@ export const persianLanguagePack: LanguagePack = {
     ک: 'k',
     ی: 'y'
   },
-  customRules: [
-    // Example custom rule to handle double hyphens
-    (text: string) => text.replace(/--+/g, '-'),
-    // Example rule to trim dashes from the beginning or end of the slug
-    (text: string) => text.replace(/(^-+)|(-+$)/g, '')
-  ]
+  customRules: [...customRules]
 }

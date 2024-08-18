@@ -1,4 +1,5 @@
 import type { LanguagePack } from '../../types.js'
+import { customRules } from '../custom-rules.js'
 
 export const hindiLanguagePack: LanguagePack = {
   symbols: {
@@ -480,10 +481,5 @@ export const hindiLanguagePack: LanguagePack = {
     फ़: 'Fi',
     ग़: 'Ghi'
   },
-  customRules: [
-    // Example custom rule to handle double hyphens
-    (text: string) => text.replace(/--+/g, '-'),
-    // Example rule to trim dashes from the beginning or end of the slug
-    (text: string) => text.replace(/(^-+)|(-+$)/g, '')
-  ]
+  customRules: [...customRules]
 }

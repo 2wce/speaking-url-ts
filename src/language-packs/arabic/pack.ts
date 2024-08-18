@@ -1,4 +1,5 @@
 import type { LanguagePack } from '../../types.js'
+import { customRules } from '../custom-rules.js'
 
 export const arabicLanguagePack: LanguagePack = {
   transliterations: {
@@ -64,10 +65,5 @@ export const arabicLanguagePack: LanguagePack = {
     '٨': '8',
     '٩': '9'
   },
-  customRules: [
-    // Example custom rule to handle double hyphens
-    (text: string) => text.replace(/--+/g, '-'),
-    // Example rule to trim dashes from the beginning or end of the slug
-    (text: string) => text.replace(/(^-+)|(-+$)/g, '')
-  ]
+  customRules: [...customRules]
 }
