@@ -1,5 +1,11 @@
 # speaking-url-ts
 
+## 0.6.1
+
+### Patch Changes
+
+- b34c31a: fix: removed hindi & burmese for further work identified in new tests
+
 ## 0.6.0
 
 ### Minor Changes
