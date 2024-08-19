@@ -13,8 +13,8 @@ export const englishLanguagePack: LanguagePack = {
     '∞': 'infinity',
     '♥': 'love',
     '|': 'or',
-    '<': 'less than',
-    '>': 'greater than',
+    '<': 'less-than',
+    '>': 'greater-than',
     '∑': 'sum',
     '¤': 'currency'
   },
