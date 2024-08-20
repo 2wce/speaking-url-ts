@@ -127,7 +127,6 @@ A language pack is an object with the following optional fields:
 
 - **`transliterations`**: An object mapping characters or phrases to their transliterated equivalents.
 - **`symbols`**: An object mapping characters to replace.
-- **`stopWords`**: An array of words to remove from the slug.
 - **`customRules`**: An array of functions that apply custom transformations to the text.
 
 ### **Example Language Pack**

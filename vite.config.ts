@@ -2,6 +2,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
+import tsconfigPaths from 'vite-tsconfig-paths'
 import { configDefaults } from 'vitest/config'
 
 export default defineConfig({
@@ -20,6 +21,7 @@ export default defineConfig({
     }
   },
   plugins: [
+    tsconfigPaths(),
     dts({
       entryRoot: 'src',
       exclude: ['**/tests/**']

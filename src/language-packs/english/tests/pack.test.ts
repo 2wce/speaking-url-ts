@@ -1,5 +1,6 @@
+import { addLanguagePack } from '@/add-language-pack.js'
+import { generateSlug } from '@/generate-slug.js'
 import { beforeAll, describe, expect, test } from 'vitest'
-import { addLanguagePack, generateSlug } from '../../../generate-slug.js'
 import { englishLanguagePack } from '../pack.js'
 
 describe('English Language Pack', () => {

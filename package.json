@@ -52,9 +52,11 @@
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.7",
     "@types/node": "22.4.1",
+    "lefthook": "1.7.14",
     "typescript": "5.5.4",
     "vite": "5.4.1",
     "vite-plugin-dts": "4.0.3",
+    "vite-tsconfig-paths": "^5.0.1",
     "vitest": "2.0.5"
   }
 }
