@@ -1,4 +1,4 @@
-import type { LanguagePack } from '../../types.js'
+import type { LanguagePack } from '@/types.js'
 import { customRules } from '../custom-rules.js'
 
 export const persianLanguagePack: LanguagePack = {

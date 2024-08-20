@@ -1,7 +1,7 @@
 import { applyReplacements } from './apply-replacement.js'
 import { applyTransliterations } from './apply-transliterations.js'
 import { languagePacks } from './language-packs/packs.js'
-import { LanguagePack, Options } from './types.js'
+import { Options } from './types.js'
 
 const cache: Map<string, string> = new Map()
 
@@ -10,27 +10,8 @@ function createCacheKey(locale: string, separator: string, input: string) {
   return `${encode(locale)}:${encode(separator)}:${encode(input)}`
 }
 
-/**
- * Adds a language pack for a specific locale. If a language pack already exists for the locale,
- * it merges the new pack with the existing one.
- *
- * @param {string} locale - The locale identifier (e.g., 'en', 'fr').
- * @param {LanguagePack} pack - The language pack to add.
- */
-export function addLanguagePack(locale: string, pack: LanguagePack) {
-  // Check if a language pack already exists for the given locale
-  if (languagePacks.has(locale)) {
-    // Retrieve the existing language pack
-    const existingPack = languagePacks.get(locale) as LanguagePack
-    // Merge the existing pack with the new pack and update the map
-    languagePacks.set(locale, {
-      ...existingPack,
-      ...pack
-    })
-  } else {
-    // If no existing pack, simply add the new pack to the map
-    languagePacks.set(locale, pack)
-  }
+const createNonAlphanumericPattern = (separator: string, symbols: string) => {
+  return new RegExp(`[^a-z0-9${separator}${symbols}]+`, 'gi')
 }
 
 /**
@@ -85,13 +66,23 @@ export function generateSlug(input: string, options: Options): string {
     })
   }
 
+  const symbols = Object.values(languagePack.symbols ?? {}).join('')
+
+  // Create a regex pattern to match non-alphanumeric characters excluding the separator and language pack symbols
+  const nonAlphanumericPattern = createNonAlphanumericPattern(
+    separator,
+    symbols
+  )
+  const separatorPattern = new RegExp(`${separator}+`, 'g')
+  const trimPattern = new RegExp(`^${separator}|${separator}$`, 'g')
+
   // Format the slug: lowercase, trim, replace non-alphanumeric characters, and remove extra separators
   // Convert to lowercase if maintainCase is false
   slug = (maintainCase ? slug : slug.toLowerCase())
     .trim()
-    .replace(/[^a-z0-9]+/g, separator)
-    .replace(new RegExp(`${separator}+`, 'g'), separator)
-    .replace(new RegExp(`^${separator}|${separator}$`, 'g'), '')
+    .replace(nonAlphanumericPattern, separator)
+    .replace(separatorPattern, separator)
+    .replace(trimPattern, '')
 
   // Cache the result for future use
   cache.set(cacheKey, slug)

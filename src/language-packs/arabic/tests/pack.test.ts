@@ -1,5 +1,5 @@
+import { generateSlug } from '@/generate-slug.js'
 import { describe, expect, test } from 'vitest'
-import { generateSlug } from '../../../generate-slug.js'
 
 describe('Arabic Language Pack', () => {
   test('correctly transliterate arabic', () => {

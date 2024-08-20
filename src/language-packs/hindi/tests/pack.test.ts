@@ -1,5 +1,5 @@
+import { generateSlug } from '@/generate-slug.js'
 import { describe, expect, it } from 'vitest'
-import { generateSlug } from '../../../generate-slug.js'
 
 describe.todo('generateSlug translate hindi letters', () => {
   it('should be correct', () => {

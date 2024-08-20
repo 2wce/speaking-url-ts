@@ -1,5 +1,5 @@
+import { generateSlug } from '@/generate-slug.js'
 import { describe, expect, it } from 'vitest'
-import { generateSlug } from '../../../generate-slug.js'
 
 describe('generateSlug translate hungarian letters', () => {
   it('umlaut should be single letter transliteration', () => {
