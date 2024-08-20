@@ -1,5 +1,11 @@
 # speaking-url-ts
 
+## 0.6.2
+
+### Patch Changes
+
+- [#17](https://github.com/2wce/speaking-url-ts/pull/17) [`3ec542a`](https://github.com/2wce/speaking-url-ts/commit/3ec542afc25a48350e2eca2c5bf853e3db60edb7) Thanks [@2wce](https://github.com/2wce)! - chore: update readme & setup aliases
+
 ## 0.6.1
 
 ### Patch Changes
