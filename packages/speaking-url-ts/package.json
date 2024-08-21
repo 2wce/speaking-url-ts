@@ -1,0 +1,57 @@
+{
+  "name": "speaking-url-ts",
+  "version": "0.6.2",
+  "sideEffects": false,
+  "description": "Generate a slug – transliteration with a lot of options",
+  "author": {
+    "name": "Kudakwashe Mupeni",
+    "email": "said.coyness-0m@icloud.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2wce/speaking-url-ts"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "transliteration",
+    "slug",
+    "url",
+    "speaking-url"
+  ],
+  "license": "MIT",
+  "private": false,
+  "source": "./src/index.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "release": "changeset publish",
+    "test": "vitest run",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "dev": "vite",
+    "build": "yarn lint && yarn format && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "vite": "5.4.1",
+    "vite-plugin-dts": "4.0.3",
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "2.0.5"
+  }
+}

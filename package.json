@@ -1,62 +1,31 @@
 {
-  "name": "speaking-url-ts",
-  "version": "0.6.2",
-  "sideEffects": false,
-  "description": "Generate a slug – transliteration with a lot of options",
-  "author": {
-    "name": "Kudakwashe Mupeni",
-    "email": "said.coyness-0m@icloud.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/2wce/speaking-url-ts"
-  },
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "keywords": [
-    "transliteration",
-    "slug",
-    "url",
-    "speaking-url"
-  ],
+  "name": "speaking-url-ts-v2",
+  "version": "0.0.0",
+  "description": "Monorepo for speaking-url-ts",
+  "repository": "https://github.com/2wce/speaking-url-ts.git",
+  "author": "Kudakwashe Mupeni <terrencemupeni@gmail.com>",
   "license": "MIT",
-  "private": false,
-  "source": "./src/index.ts",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
-  "type": "module",
-  "files": [
-    "dist"
+  "private": true,
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "default": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "scripts": {
-    "release": "changeset publish",
-    "test": "vitest",
-    "lint": "biome check",
-    "format": "biome format --write",
-    "dev": "vite",
-    "build": "yarn lint && yarn format && tsc && vite build",
-    "preview": "vite preview"
-  },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.7",
     "@types/node": "22.4.1",
     "lefthook": "1.7.14",
-    "typescript": "5.5.4",
-    "vite": "5.4.1",
-    "vite-plugin-dts": "4.0.3",
-    "vite-tsconfig-paths": "^5.0.1",
-    "vitest": "2.0.5"
+    "turbo": "2.0.14",
+    "typescript": "5.5.4"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "dev": "turbo run dev",
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   }
 }

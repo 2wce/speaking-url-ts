@@ -216,7 +216,8 @@
       "node_modules/**",
       "coverage/**",
       ".vscode",
-      "package.json"
+      "package.json",
+      "vite.config.js.timestamp-*"
     ]
   }
 }
