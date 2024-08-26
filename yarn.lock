@@ -781,30 +781,30 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/hono-api-reference@0.5.141":
-  version "0.5.141"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.141.tgz#a32ac77767c69e65b1214f7e866c504a239933b1"
-  integrity sha512-EFGgjf91RRRlyOJgZfCH/aiD8UXhgIeFdNEdHQZF20UoJr5NvugKUsK3YYm8StkJ3Q7ApXm9ASnkeU2oiGgbnA==
+"@scalar/hono-api-reference@0.5.142":
+  version "0.5.142"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.142.tgz#79b2768e9a535d01d1044339c5a49740bb6bcd23"
+  integrity sha512-4rGorh7OsrLXtZ4sNxvlaLZYpLcdxwps2y2Y3gBtBNL+n5SuYVCI+zhcYlkkghV98/fFNG23wg/aUSlVt370Dw==
   dependencies:
-    "@scalar/types" "0.0.3"
+    "@scalar/types" "0.0.4"
 
 "@scalar/openapi-types@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.0.1.tgz#52eddce642a016e2c8223ee398a014cdb3a288b7"
   integrity sha512-qMcUrhe+JRXlI9VGWcY/xGHkGplHdZ5UdGFXJ0q9e20gFVk2HMApE98Mo2iUp42Gff0xHIcNHaEQKAhdfW3R2Q==
 
-"@scalar/themes@0.9.26":
-  version "0.9.26"
-  resolved "https://registry.yarnpkg.com/@scalar/themes/-/themes-0.9.26.tgz#bcf865780a2c6a8544d15aaa1aee51c7c953c64d"
-  integrity sha512-94bEZgnTYZLaZiaiM/e7dY8EiK3UZxfd7Tp88f+8MWz314Jtg1klb2QOu7aJLgPIxoenSmF15IKkdKHB2bNKyQ==
+"@scalar/themes@0.9.27":
+  version "0.9.27"
+  resolved "https://registry.yarnpkg.com/@scalar/themes/-/themes-0.9.27.tgz#9687b51ebec6919c6ccacec15c5c9711965df496"
+  integrity sha512-4MLxkYM3S5Xrbb7qiNTi+8KYRzkIuQVc8nKOdZ/TJ5Tw9V+7w99PKQNeDkiZlLTGZsvwi6MTPU+vk9ta83Z18A==
 
-"@scalar/types@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.3.tgz#6e693487a8fa37c992d6ad9031b355a2013a4941"
-  integrity sha512-urSd+/ydgAQPNEpc6vvCMRjPi9rxx3whEne6JimVyPUefmzkIvamMce0DpJFKTbbwy/eYceLNCPbyq4NzWo/4A==
+"@scalar/types@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.4.tgz#03aeba70c9432649f491dd16040321bdfd8243c9"
+  integrity sha512-pyKmloTBxq7ktzQlX8r4kAp6qfd0eZyUv1sMS0hKD1CSEAFikgOAxCmjCiFzuNHf4tjCAA0sGPsmI69fOsn9gQ==
   dependencies:
     "@scalar/openapi-types" "0.0.1"
-    "@scalar/themes" "0.9.26"
+    "@scalar/themes" "0.9.27"
     "@unhead/schema" "^1.9.5"
 
 "@sinclair/typebox@0.25.24":
