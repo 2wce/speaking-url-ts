@@ -2191,10 +2191,10 @@ hono-rate-limiter@0.4.0:
   resolved "https://registry.yarnpkg.com/hono-rate-limiter/-/hono-rate-limiter-0.4.0.tgz#5f7f1f24e04e85faf7b654816d8da66ba3692542"
   integrity sha512-7RWU2HZvxPtfBrvjXKDiQ3F6ZH8k49JhxVkHquUz5UZKjauj5PrP29MvISykThtfpy4mGG6kqxFBHW1ed9wwnA==
 
-hono@4.5.9:
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/hono/-/hono-4.5.9.tgz#2627c55c4c97ae826973dddac857ba4476fde6c6"
-  integrity sha512-zz8ktqMDRrZETjxBrv8C5PQRFbrTRCLNVAjD1SNQyOzv4VjmX68Uxw83xQ6oxdAB60HiWnGEatiKA8V3SZLDkQ==
+hono@4.5.10:
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/hono/-/hono-4.5.10.tgz#6ee874b54faffedaaa94a658c96e2cd4968ccea6"
+  integrity sha512-az6tdU1U8o/l0v8O37FIQuc+ER/TeD9vHt/qs8JnBDgMxw6Zu5L2AixUyHeXZNcu87r7iYo8Ey85R7IogOINKA==
 
 hookable@^5.5.3:
   version "5.5.3"
