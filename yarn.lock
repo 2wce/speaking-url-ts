@@ -739,30 +739,30 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/hono-api-reference@0.5.145":
-  version "0.5.145"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.145.tgz#4fcbbaef50269892b85ed86fdac5913193080de9"
-  integrity sha512-ySfQ+fz1hyX/aWIZ+7Ict/LX3Y4uNVXhBZJqORI0yDUNfw/eqYUH47PHLqg3a+j7Und54RqQY8TKQkH9xQkzog==
+"@scalar/hono-api-reference@0.5.146":
+  version "0.5.146"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.146.tgz#eb972793dd529d627f7ca5e85cb86a0a92598166"
+  integrity sha512-8+hE4Y2PQd3np2gT3rJ4YiyKFJDqCTo1N0A/rSYheymRO2Bxc8g7mOo+3roStHLH9zA3RnmJtlJSe+rbgHFWIw==
   dependencies:
-    "@scalar/types" "0.0.7"
+    "@scalar/types" "0.0.8"
 
-"@scalar/openapi-types@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.0.tgz#d331ead80793587a753cc8754616b4c235eea3d7"
-  integrity sha512-UxyIkRqC2rbvQJhenA+KdgAbLNUPjqI5CHhZmTuxiv7De9ZJLRVTQCa0JxNqSJ/b51VKpqZ/pDLvjbQpxGFWcA==
+"@scalar/openapi-types@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.1.tgz#1fef27b9f595d52c8a52a0d1626ab6448439abaf"
+  integrity sha512-NMy3QNk6ytcCoPUGJH0t4NNr36OWXgZhA3ormr3TvhX1NDgoF95wFyodGVH8xiHeUyn2/FxtETm8UBLbB5xEmg==
 
-"@scalar/themes@0.9.28":
-  version "0.9.28"
-  resolved "https://registry.yarnpkg.com/@scalar/themes/-/themes-0.9.28.tgz#a63de14eb9b3d463fbcd6783fe51367172ca7ae3"
-  integrity sha512-2pFGnjSBL2daPA5roRNRDy8xAHpeTI5QYpfyTj88iIaYT68EVnDUheUA2i3vRB705FCGEbDR0xKD7poTSfAYng==
+"@scalar/themes@0.9.29":
+  version "0.9.29"
+  resolved "https://registry.yarnpkg.com/@scalar/themes/-/themes-0.9.29.tgz#ab6d5befcd05137775f278abe56283c9a9c026fb"
+  integrity sha512-2YHl6RjQtgdbgMMCtamS+u9KcVIohbpUKUColpRWvM15rflNDpJzJL4f622gBO5Pvqjhss4hw1buU7veugBeVA==
 
-"@scalar/types@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.7.tgz#838879400085f963576de7bf45d9ec5dbde71825"
-  integrity sha512-ylMAM8Kx+mSVu1yBipz7h2pQrEXyMTHkYWc/UigGdn3dpuBArTnkBdJte85yH/7+R630HGm3FSbAHSioOCT+vA==
+"@scalar/types@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.8.tgz#bc190f884faaa7de521f2f2a4b1e2e3d37c4b53c"
+  integrity sha512-xvS5HPDxc2gNwvGzBeWkAklJwYQClNcnuKPKsIODFaG5v+ji7ULdqA/8jvPAIhI4gdy14c2dxC8heoeJ3jybaw==
   dependencies:
-    "@scalar/openapi-types" "0.1.0"
-    "@scalar/themes" "0.9.28"
+    "@scalar/openapi-types" "0.1.1"
+    "@scalar/themes" "0.9.29"
     "@unhead/schema" "^1.9.5"
 
 "@sinclair/typebox@0.25.24":
