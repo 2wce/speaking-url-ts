@@ -478,11 +478,6 @@
     "@asteasolutions/zod-to-openapi" "^7.1.0"
     "@hono/zod-validator" "0.3.0"
 
-"@hono/zod-validator@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.2.2.tgz#929a1c40aee5eac1ed9c84094d6d977e0b70187a"
-  integrity sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==
-
 "@hono/zod-validator@0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.3.0.tgz#987ffccdb5fc1b5fa87c321ad161e5f1f159e6a6"
