@@ -742,24 +742,24 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/hono-api-reference@0.5.150":
-  version "0.5.150"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.150.tgz#cce3e69c6ea7b5f35e7215eadb3aa1e488daa6c1"
-  integrity sha512-KGXaE8iEuYL2EhCDc9vBPw3a6+cj552b85EbflEUijOgLhKhcoDb2A/QIgyuk/89Us3mrWJubEZ8NiH8dMLd8Q==
+"@scalar/hono-api-reference@0.5.154":
+  version "0.5.154"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.154.tgz#baad496308b5002303396c1cfebf239fb7d30969"
+  integrity sha512-v5ufLt7OG27BsPqO20YtnLvIcTsRZjU5jbFbpMUguW+SFgRWh1gji2RlC4BfK5x9hrK1Ek0hz46OMYweWp4I3w==
   dependencies:
-    "@scalar/types" "0.0.12"
+    "@scalar/types" "0.0.15"
 
-"@scalar/openapi-types@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.1.tgz#1fef27b9f595d52c8a52a0d1626ab6448439abaf"
-  integrity sha512-NMy3QNk6ytcCoPUGJH0t4NNr36OWXgZhA3ormr3TvhX1NDgoF95wFyodGVH8xiHeUyn2/FxtETm8UBLbB5xEmg==
+"@scalar/openapi-types@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.3.tgz#1258f94a598af22623ce981d6e2ee25809382065"
+  integrity sha512-UPUquC/ZSAdeSDbpdqMzeBVcgeytqJTj9P3QR4X9IRti5I1jXoCOUBY84CGGLXfcWquB7wfwHxn3DqQEnQmBVw==
 
-"@scalar/types@0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.12.tgz#cb61a6fabe9d5cfb5e9fa4811c6a3ec4d064baf8"
-  integrity sha512-XYZ36lSEx87i4gDqopQlGCOkdIITHHEvgkuJFrXFATQs9zHARop0PN0g4RZYWj+ZpCUclOcaOjbCt8JGe22mnQ==
+"@scalar/types@0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.15.tgz#3270598b48115f1a4dfad1170227f3d11d7a8d87"
+  integrity sha512-9fSBoAuJTsmnt2FTkm/F6LRq+TIeeRI0H8wz+7J3pHfcw0YGFEZrRZOo1WZ8fpovD0fQgg+r4BPrtN8+qJ12wQ==
   dependencies:
-    "@scalar/openapi-types" "0.1.1"
+    "@scalar/openapi-types" "0.1.3"
     "@unhead/schema" "^1.9.5"
 
 "@sinclair/typebox@0.25.24":
