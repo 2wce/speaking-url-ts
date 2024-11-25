@@ -742,25 +742,25 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/hono-api-reference@0.5.159":
-  version "0.5.159"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.159.tgz#91eccac27c23e598506d97d459292ae84855a6b3"
-  integrity sha512-nUKaN0CKvytbXPj9b6taF/efKKRqEUwhVxlfLVjrJXN0eHNHDWxG9e/5Tyw1o2MXJo1cQpGZ4qTh48k/8u6ZjA==
+"@scalar/hono-api-reference@0.5.161":
+  version "0.5.161"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.161.tgz#58e1c9a7c092783951af0620f53ac270199615db"
+  integrity sha512-n30VVZrl9z/IcRbyNZZLGx4RMUUH1Zk12ryR1zPG/tdkzNG7ODP6D+rhasn5cSaCg/0BvdCcHEaANEwVJUEjqw==
   dependencies:
-    "@scalar/types" "0.0.19"
+    "@scalar/types" "0.0.21"
 
 "@scalar/openapi-types@0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.5.tgz#77e01b88c691a08ed8cbc5a1e4f22c84f4d6c2f8"
   integrity sha512-6geH9ehvQ/sG/xUyy3e0lyOw3BaY5s6nn22wHjEJhcobdmWyFER0O6m7AU0ZN4QTjle/gYvFJOjj552l/rsNSw==
 
-"@scalar/types@0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.19.tgz#114cd4aebf7222e992d333932e4e35f23982e841"
-  integrity sha512-wOxtXd35BS0DaVhBopQUB8c8hfLQ+/PKEr99GbOZW+4DWCrEB8JfWJgvpJyxHU6by7LHNVY4fvpFQR7Ezh1IIw==
+"@scalar/types@0.0.21":
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.21.tgz#a81327559c3c679fd1cc4a3237437fa23dc18cbc"
+  integrity sha512-HR8KeV5zjdVDQdfs7ONhpIRbAzrMS1KIu2sbNgVXtFSaj+1/6WN5gM/yY1DKoaC3oyvpqwd/HyL9rLTqrOkrRw==
   dependencies:
     "@scalar/openapi-types" "0.1.5"
-    "@unhead/schema" "^1.9.5"
+    "@unhead/schema" "^1.11.11"
 
 "@sinclair/typebox@0.25.24":
   version "0.25.24"
@@ -834,10 +834,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.55.tgz#c329cbd434c42164f846b909bd6f85b5537f6240"
   integrity sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==
 
-"@unhead/schema@^1.9.5":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.10.0.tgz#6d0f0dd4de21ab6e7c16d2471691131f63b7cb24"
-  integrity sha512-hmgkFdLzm/VPLAXBF89Iry4Wz/6FpHMfMKCnAdihAt1Ublsi04RrA0hQuAiuGG2CZiKL4VCxtmV++UXj/kyakA==
+"@unhead/schema@^1.11.11":
+  version "1.11.13"
+  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.11.13.tgz#475f1b93d761b75beef6ba0e9387b771e0f25ed9"
+  integrity sha512-fIpQx6GCpl99l4qJXsPqkXxO7suMccuLADbhaMSkeXnVEi4ZIle+l+Ri0z+GHAEpJj17FMaQdO5n9FMSOMUxkw==
   dependencies:
     hookable "^5.5.3"
     zhead "^2.2.4"
