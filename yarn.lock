@@ -770,22 +770,22 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/hono-api-reference@0.5.166":
-  version "0.5.166"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.166.tgz#b664f5800e2d5f7b3a7c52be39ca84a3f3c2fe92"
-  integrity sha512-Vxcu7IugI/mpUYkLa8p1iUoUMyNgHfKVHFxFD9YMcb4ugDMSGSikvp0397qUj2o0sBLb6GIOCCADn/Jw3KQ3Kw==
+"@scalar/hono-api-reference@0.5.168":
+  version "0.5.168"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.168.tgz#bb680de6460c7dc6761c247a971fce12833b4aad"
+  integrity sha512-kNtmHki6vaNbCpCo3eJQT+UOz+8MG/9l4XqnD9LAmPahBsKrmVvnwzpRYCovHvT8gf2bIHqFdhJUAz5sxF/MNA==
   dependencies:
-    "@scalar/types" "0.0.26"
+    "@scalar/types" "0.0.27"
 
 "@scalar/openapi-types@0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.6.tgz#c0b71fe89c67c7a8ed8b847f683cf7d4d6c9d5e3"
   integrity sha512-V+KnESyVJqorJzEN0QFlu3tAImCHjnvPov6QcQvjfY7s0+CjrI3rRO3oVIRlXURTQrQGrnhxvK0SkXGAZ+dxvw==
 
-"@scalar/types@0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.26.tgz#5fa8c897da6ac4037579c146d8ce5f1a47736381"
-  integrity sha512-32RvTVh/tpOD8unnVG+41/hBoPCsTr1YmcLaEC3LIgYZxAFE8OeCO25JkQRFNBZEaid5FfRt9/qBlx5HqH1PAg==
+"@scalar/types@0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.27.tgz#062e33330e1f11c901aad9e6e35b6a03979456c8"
+  integrity sha512-5f293PX78gwE3NwcBNXf7+qc9OIB6lYsRpzGZts7eaN3aN9i23ysWewF76DOs74oARRP5LgNBMC7JCo9dIxM1Q==
   dependencies:
     "@scalar/openapi-types" "0.1.6"
     "@unhead/schema" "^1.11.11"
