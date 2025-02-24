@@ -775,24 +775,24 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/hono-api-reference@0.5.173":
-  version "0.5.173"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.173.tgz#4fa5788a6a871df29ec128c5172320ae631fec91"
-  integrity sha512-3d92BE7yBba0BXbt+ZWRjd66oSG7yhL04c5BxB8bgQY54bUsCcCAzMdZFt65JbB8zJ6ffWZNB+FZWkGR3KDmdg==
+"@scalar/hono-api-reference@0.5.175":
+  version "0.5.175"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.175.tgz#7d7cbfc073eb29026488f83ed79c39890d3966f3"
+  integrity sha512-jSY/qYFHitFFFsLgvmspDN/Fd3V3nC5Q17XJW/qhLtXX/M4pZUGVZOTLU2GsAueh10J5m7VLPZo+HQL6HC35bg==
   dependencies:
-    "@scalar/types" "0.0.32"
+    "@scalar/types" "0.0.34"
 
-"@scalar/openapi-types@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.7.tgz#bf90383c67280ae875e6ecae61a3e96f3c50a119"
-  integrity sha512-oOTG3JQifg55U3DhKB7WdNIxFnJzbPJe7rqdyWdio977l8IkxQTVmObftJhdNIMvhV2K+1f/bDoMQGu6yTaD0A==
+"@scalar/openapi-types@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.8.tgz#05e8c3d163bc85f47c1d982272869bda65b8adfe"
+  integrity sha512-iufA5/6hPCmRIVD2eh7qGpoKvoA08Gw/qUb2JECifBtAwA93fo7+1k9uHK440f2LMJsbxIzA+nv7RS0BmfiO/g==
 
-"@scalar/types@0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.32.tgz#40e230d21dc5863e5dbc518cdb653fddeaa07dbf"
-  integrity sha512-WHMkFQw4cu1mrG4pEiTUXVBBs205kHECdLM/5F7ATI0A7Axv6G1GgofkwbyCAayUjNk82uaCXzSOgPojbq4iGQ==
+"@scalar/types@0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.34.tgz#c80feeb38bcac83e6b30a4b50ea8e435ec8e61c2"
+  integrity sha512-q01ctijmHArM5KOny2zU+sHfhpsgOAENrDENecK2TsQNn5FYLmFZouMKeW2M6F7KFLPZnFxUiL/rT88b6Rp/Kg==
   dependencies:
-    "@scalar/openapi-types" "0.1.7"
+    "@scalar/openapi-types" "0.1.8"
     "@unhead/schema" "^1.11.11"
 
 "@sinclair/typebox@0.25.24":
