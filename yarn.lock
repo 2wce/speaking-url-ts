@@ -485,10 +485,10 @@
     "@asteasolutions/zod-to-openapi" "^7.1.0"
     "@hono/zod-validator" "^0.4.1"
 
-"@hono/zod-validator@0.4.2", "@hono/zod-validator@^0.4.1":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.4.2.tgz#cac46e0d5b2440b794fef58747d3dbb47ae7f92d"
-  integrity sha512-1rrlBg+EpDPhzOV4hT9pxr5+xDVmKuz6YJl+la7VCwK6ass5ldyKm5fD+umJdV2zhHD6jROoCCv8NbTwyfhT0g==
+"@hono/zod-validator@0.4.3", "@hono/zod-validator@^0.4.1":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.4.3.tgz#f72d68be9e494ec1615cf23fbc1c2cd5dd66fd4b"
+  integrity sha512-xIgMYXDyJ4Hj6ekm9T9Y27s080Nl9NXHcJkOvkXPhubOLj8hZkOL8pDnnXfvCf5xEE8Q4oMFenQUZZREUY2gqQ==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
