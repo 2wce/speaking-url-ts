@@ -477,10 +477,10 @@
   resolved "https://registry.yarnpkg.com/@hono-rate-limiter/redis/-/redis-0.1.4.tgz#950fe61db4452d1c8ced57bb38bc3b25b79c6252"
   integrity sha512-RSrVX5N2Oo/xXApskegu667cBVHyr8RXGWnbRDGjU2py8pN4BttEKSHA0iKi3BAwh1xSkENgDRng4tpFD9DbKg==
 
-"@hono/zod-openapi@0.18.4":
-  version "0.18.4"
-  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.18.4.tgz#050d43f8308cce24aaff19b3be36be1e83de79e2"
-  integrity sha512-6NHMHU96Hh32B1yDhb94Z4Z5/POsmEu2AXpWLWcBq9arskRnOMt2752yEoXoADV8WUAc7H1IkNaQHGj1ytXbYw==
+"@hono/zod-openapi@0.19.2":
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.19.2.tgz#cb51c6272a7dd950ec1d795b7088a9b95116b089"
+  integrity sha512-lkFa6wdQVgY7d7/m++Ixr3hvKCF5Y+zjTIPM37fex5ylCfX53A/W28gZRDuFZx3aR+noKob7lHfwdk9dURLzxw==
   dependencies:
     "@asteasolutions/zod-to-openapi" "^7.1.0"
     "@hono/zod-validator" "^0.4.1"
