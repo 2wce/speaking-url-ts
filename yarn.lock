@@ -775,29 +775,29 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.1.0.tgz#92c47bf5654d9f1161417224ce9595defba29285"
-  integrity sha512-LnszTA7JmdtmEX1qqhkIKTKFQiFstRYiDs0NrXdYtMk/WB55Bnoz0Lk8BWw1qC1NhMpP5It+PRYZke727Gxrbw==
+"@scalar/core@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.2.2.tgz#707ac6c475a76989104c3d5aa572c8a1862d24d6"
+  integrity sha512-jT6vfz37yQnqVjj8kXYEmV2cZvODW1A0PXjxZ9DzKqjm9tIssNwP4vvcdD1FSuiMcj+rgxAxOjIYMI+ybI/9RQ==
   dependencies:
-    "@scalar/types" "0.0.39"
+    "@scalar/types" "0.1.2"
 
-"@scalar/hono-api-reference@0.5.183":
-  version "0.5.183"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.5.183.tgz#b8c43ba8fe7424219b2824f6072ebfc629e24caf"
-  integrity sha512-rzWxFDjBW2VvMRAPqcwgkC+7ZMmBZZVIMFUejwjF+618jKvQ09ooVyBb9hUnW4KaUElUqx/iIFflLKf0A95iLA==
+"@scalar/hono-api-reference@0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.7.2.tgz#f6c4013e5db02f5c3b7f980315e321fc7204a897"
+  integrity sha512-CnxRjGfAWPGkV0D5TEwogvn7JSx/f9+ag6vQ6g25GigSDyj/UkxYbZqwe/QOV/+2EWruY3ypOvPuNMf7nEQhdQ==
   dependencies:
-    "@scalar/core" "0.1.0"
+    "@scalar/core" "0.2.2"
 
 "@scalar/openapi-types@0.1.9":
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.9.tgz#e2c5144f7b31ab831f914b1daa0f34b50e47b106"
   integrity sha512-HQQudOSQBU7ewzfnBW9LhDmBE2XOJgSfwrh5PlUB7zJup/kaRkBGNgV2wMjNz9Af/uztiU/xNrO179FysmUT+g==
 
-"@scalar/types@0.0.39":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.0.39.tgz#9b97c9d8bc9d523f0173f2138a94473331d45220"
-  integrity sha512-oAMBWC5B0I8IViCuaV1ydoUAm7KJSwHZfCuLMea15tSKh0/wj9H1KQvDJF8gE/cUVwjQvj4q94GB22kBT4XGNQ==
+"@scalar/types@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.1.2.tgz#899669cbe96b365639a8da2013e8a2b22e0e840f"
+  integrity sha512-5kCLQRwAYWt1ds110EaUb9yonc3KoQYNyo4YUCigJLOnoNugbqkEX0zRudGevItiuk+xg4uOYd30r3C+6xAasA==
   dependencies:
     "@scalar/openapi-types" "0.1.9"
     "@unhead/schema" "^1.11.11"
