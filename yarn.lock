@@ -775,32 +775,34 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.2.2.tgz#707ac6c475a76989104c3d5aa572c8a1862d24d6"
-  integrity sha512-jT6vfz37yQnqVjj8kXYEmV2cZvODW1A0PXjxZ9DzKqjm9tIssNwP4vvcdD1FSuiMcj+rgxAxOjIYMI+ybI/9RQ==
+"@scalar/core@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.2.4.tgz#bb130f2cbdea8b1cd97e427ad5bcc04149a5aa20"
+  integrity sha512-XGrg2P+FrvtzLsDm6TVl1oZv4DYmkFqJ3sI/SS2mjRlfOcblHv2CcrhYTz0+y1nG3cyHlE5esHAK0+BEI032dA==
   dependencies:
-    "@scalar/types" "0.1.2"
+    "@scalar/types" "0.1.4"
 
-"@scalar/hono-api-reference@0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.7.2.tgz#f6c4013e5db02f5c3b7f980315e321fc7204a897"
-  integrity sha512-CnxRjGfAWPGkV0D5TEwogvn7JSx/f9+ag6vQ6g25GigSDyj/UkxYbZqwe/QOV/+2EWruY3ypOvPuNMf7nEQhdQ==
+"@scalar/hono-api-reference@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.7.4.tgz#b14389ddaebe45f5952c7b76070c589f84163d5b"
+  integrity sha512-Uo2TpPdQbhnDkmTnVeTIXEXL30YY0GvBRgOo6mv1pIzZrYbTSJqxfg9um1/5wXZ6fh6w6GI3Y/tdu0GcMg5fJw==
   dependencies:
-    "@scalar/core" "0.2.2"
+    "@scalar/core" "0.2.4"
 
 "@scalar/openapi-types@0.1.9":
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.1.9.tgz#e2c5144f7b31ab831f914b1daa0f34b50e47b106"
   integrity sha512-HQQudOSQBU7ewzfnBW9LhDmBE2XOJgSfwrh5PlUB7zJup/kaRkBGNgV2wMjNz9Af/uztiU/xNrO179FysmUT+g==
 
-"@scalar/types@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.1.2.tgz#899669cbe96b365639a8da2013e8a2b22e0e840f"
-  integrity sha512-5kCLQRwAYWt1ds110EaUb9yonc3KoQYNyo4YUCigJLOnoNugbqkEX0zRudGevItiuk+xg4uOYd30r3C+6xAasA==
+"@scalar/types@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.1.4.tgz#6b4cea83827da51d59d7621b148db2ec4b1f3395"
+  integrity sha512-IAxpfrfdYfliLJR6WbuC8hxUwBUOeVsGuZxQE+zP8JDtdoHmgT6aNxCqMnGZ1ft6dvJ4jvzVR6qCWrq6Kg25oA==
   dependencies:
     "@scalar/openapi-types" "0.1.9"
     "@unhead/schema" "^1.11.11"
+    nanoid "^5.1.5"
+    type-fest "^4.20.0"
     zod "^3.23.8"
 
 "@sinclair/typebox@0.25.24":
@@ -2518,6 +2520,11 @@ nanoid@^3.3.8:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.8.tgz#b1be3030bee36aaff18bacb375e5cce521684baf"
   integrity sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==
 
+nanoid@^5.1.5:
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.1.5.tgz#f7597f9d9054eb4da9548cdd53ca70f1790e87de"
+  integrity sha512-Ir/+ZpE9fDsNH0hQ3C68uyThDXzYcim2EqcZ8zn8Chtt1iylPT9xXJB0kPCnqzgcEGikO9RxSrh63MsmVCU7Fw==
+
 node-fetch@2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
@@ -3257,6 +3264,11 @@ turbo@2.4.4:
     turbo-linux-arm64 "2.4.4"
     turbo-windows-64 "2.4.4"
     turbo-windows-arm64 "2.4.4"
+
+type-fest@^4.20.0:
+  version "4.38.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.38.0.tgz#659fa14d1a71c2811400aa3b5272627e0c1e6b96"
+  integrity sha512-2dBz5D5ycHIoliLYLi0Q2V7KRaDlH0uWIvmk7TYlAg5slqwiPv1ezJdZm1QEM0xgk29oYWMCbIG7E6gHpvChlg==
 
 typescript@4.9.5:
   version "4.9.5"
