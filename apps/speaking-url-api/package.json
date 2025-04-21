@@ -11,7 +11,7 @@
     "@hono/zod-validator": "0.4.3",
     "@scalar/hono-api-reference": "0.8.1",
     "@vercel/kv": "3.0.0",
-    "hono": "4.7.6",
+    "hono": "4.7.7",
     "hono-rate-limiter": "0.4.2",
     "speaking-url-ts": "0.6.2",
     "zod": "3.24.2"
