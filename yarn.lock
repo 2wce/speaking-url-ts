@@ -775,19 +775,19 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.2.7":
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.2.7.tgz#8d355339e9468db5083ab7068a44650ea35a368d"
-  integrity sha512-8BeyxQiTzd3yST43x1w3t47kgkQSBVfR+bpruXaLFxeITWjzOTro5Ojh+enGWnooIfg5wMDpNqfDJCbGOVq1hg==
+"@scalar/core@0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.2.8.tgz#36105e6a18e9c2680ca47140808118f4688bc882"
+  integrity sha512-4WjhJl0hJGgPGznmRvMFscY4ZMRbXgfEAsDGWl9eVqE/ZdXFxnoY2LsGhBALSKEYfwgNwLzk3A+0bCv2oU6N7g==
   dependencies:
-    "@scalar/types" "0.1.7"
+    "@scalar/types" "0.1.8"
 
-"@scalar/hono-api-reference@0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.8.1.tgz#6c0a696059b5383f132b753fee5979ba41e9c7f1"
-  integrity sha512-bKPJ6QPBOUEGupq4wKF1iUl3upsVkTdhIIkUwtEpEx9ox3CCsp0kxAUykhSUuhZ3Xhy6WcuMdigOlU5PzTY8xA==
+"@scalar/hono-api-reference@0.8.2":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.8.2.tgz#9d25b3eda487b41135b7bd263000186447a65740"
+  integrity sha512-sgNtRst9KTamZMxE66fuIczgTsG7Yeputoelvxw/O+5dcN4KPeZ8ac67aqFH9sG1t+bbQyxqZ+qn+6ESoZMJQw==
   dependencies:
-    "@scalar/core" "0.2.7"
+    "@scalar/core" "0.2.8"
 
 "@scalar/openapi-types@0.2.0":
   version "0.2.0"
@@ -796,10 +796,10 @@
   dependencies:
     zod "^3.23.8"
 
-"@scalar/types@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.1.7.tgz#a87ca2c0bbfe6508fa98d385c1c2d7c30e7952f6"
-  integrity sha512-irIDYzTQG2KLvFbuTI8k2Pz/R4JR+zUUSykVTbEMatkzMmVFnn1VzNSMlODbadycwZunbnL2tA27AXed9URVjw==
+"@scalar/types@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.1.8.tgz#e31b441d941cb25f6ebc03fe1df72e1934a7b3c2"
+  integrity sha512-VL1dcLB6w7V0htFxIgcdQeQhD5LFW1oqWk9ZWfzd9Ekl0a3bDGc81R5S3fk6qCHahPZR3cVPr4rHVQh0aX+FrQ==
   dependencies:
     "@scalar/openapi-types" "0.2.0"
     "@unhead/schema" "^1.11.11"
