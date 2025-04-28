@@ -16,7 +16,7 @@
     "@changesets/changelog-github": "0.5.1",
     "@changesets/cli": "2.29.2",
     "@types/node": "22.14.1",
-    "lefthook": "1.11.11",
+    "lefthook": "1.11.12",
     "turbo": "2.5.0",
     "typescript": "5.8.3"
   },
