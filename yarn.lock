@@ -477,23 +477,18 @@
   resolved "https://registry.yarnpkg.com/@hono-rate-limiter/redis/-/redis-0.1.4.tgz#950fe61db4452d1c8ced57bb38bc3b25b79c6252"
   integrity sha512-RSrVX5N2Oo/xXApskegu667cBVHyr8RXGWnbRDGjU2py8pN4BttEKSHA0iKi3BAwh1xSkENgDRng4tpFD9DbKg==
 
-"@hono/zod-openapi@0.19.5":
-  version "0.19.5"
-  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.19.5.tgz#26250b4537daa51127ee0fb9f7d2f2f2743c50b7"
-  integrity sha512-n2RqdZL7XIaWPwBNygctG/1eySyRtSBnS7l+pIsP3f2JW5P2l7Smm6SLluscrGwB5l2C2fxbfvhWoC6Ig+SxXw==
+"@hono/zod-openapi@0.19.6":
+  version "0.19.6"
+  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.19.6.tgz#28dc648aa8db21b6e56e0d70174af6209b2218cc"
+  integrity sha512-qD2I0i5Ksry8gf47rXR6tuUAfv5S/wRZPRUNn+y8vOkgArDtIs30Ha3KGHeuGhcMk773D197IlPUppSCbHt6iQ==
   dependencies:
     "@asteasolutions/zod-to-openapi" "^7.3.0"
-    "@hono/zod-validator" "^0.4.3"
+    "@hono/zod-validator" "^0.5.0"
 
-"@hono/zod-validator@0.5.0":
+"@hono/zod-validator@0.5.0", "@hono/zod-validator@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.5.0.tgz#2eb1c68c6746de91c58241674c26742b97fd8e7d"
   integrity sha512-ds5bW6DCgAnNHP33E3ieSbaZFd5dkV52ZjyaXtGoR06APFrCtzAsKZxTHwOrJNBdXsi0e5wNwo5L4nVEVnJUdg==
-
-"@hono/zod-validator@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.4.3.tgz#f72d68be9e494ec1615cf23fbc1c2cd5dd66fd4b"
-  integrity sha512-xIgMYXDyJ4Hj6ekm9T9Y27s080Nl9NXHcJkOvkXPhubOLj8hZkOL8pDnnXfvCf5xEE8Q4oMFenQUZZREUY2gqQ==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -3419,7 +3414,21 @@ vite-tsconfig-paths@^5.1.4:
     globrex "^0.1.2"
     tsconfck "^3.0.3"
 
-vite@6.3.3, "vite@^5.0.0 || ^6.0.0":
+vite@6.3.4:
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.4.tgz#d441a72c7cd9a93b719bb851250a4e6c119c9cff"
+  integrity sha512-BiReIiMS2fyFqbqNT/Qqt4CVITDU9M9vE+DKcVAsB+ZV0wvTKd+3hMbkpxz1b+NmEDMegpVbisKiAZOnvO92Sw==
+  dependencies:
+    esbuild "^0.25.0"
+    fdir "^6.4.4"
+    picomatch "^4.0.2"
+    postcss "^8.5.3"
+    rollup "^4.34.9"
+    tinyglobby "^0.2.13"
+  optionalDependencies:
+    fsevents "~2.3.3"
+
+"vite@^5.0.0 || ^6.0.0":
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.3.tgz#497392c3f2243194e4dbf09ea83e9a3dddf49b88"
   integrity sha512-5nXH+QsELbFKhsEfWLkHrvgRpTdGJzqOZ+utSdmPTvwHmvU6ITTm3xx+mRusihkcI8GeC7lCDyn3kDtiki9scw==
