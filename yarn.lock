@@ -780,37 +780,35 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.2.11":
-  version "0.2.11"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.2.11.tgz#8abd0cb2b6f748828a872511a2f5d49a95c076fe"
-  integrity sha512-crakGk7IOWEvlexKdxr+uLW+SzvE/9OLZMYGHn0GNop3jSsHqZRB7a4epZ6MzmOP6L2665M4q8g1IuTKBudYVw==
+"@scalar/core@0.2.14":
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.2.14.tgz#2f254b35e4e565b0fe52376c585de54874b34cc2"
+  integrity sha512-w2oLqUVJt88ed2uHKFgg8UOFeyHDpi3QmSJqqc4CZPjAz/lKj34antHYMEG3A4Iom+06W31XQeqFO9zQ2eNsfA==
   dependencies:
-    "@scalar/types" "0.1.11"
+    "@scalar/types" "0.1.14"
 
-"@scalar/hono-api-reference@0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.8.5.tgz#6fb79757f36df6274a735c848fdf2243cb137b79"
-  integrity sha512-s9jmP7wQnXNvGR/pFyUxc1BDb7YMbLHJY7czqbMouBjNOhaeutipg2RioiViLOPdyLUoJWeUDxL7h4fUxcZMoA==
+"@scalar/hono-api-reference@0.8.8":
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.8.8.tgz#dcb480c5619d9d4f007cff2912af385b2d2b3983"
+  integrity sha512-VLpgkUOcKg4SSnWwp6/hGF5gNypeL+e791HD4ANmxImU8k+VbsKh53W7ZOivRY1fIMkPcd0TvzQvKm2MqyJDJw==
   dependencies:
-    "@scalar/core" "0.2.11"
+    "@scalar/core" "0.2.14"
 
-"@scalar/openapi-types@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.2.1.tgz#8bc83eae8f8dd91cbe0142b2ea9451388afc0a22"
-  integrity sha512-UMxX54taQXnEWYEuesbH+pkjlXRVV1u/Wx6YbVeU3QoJdFGqT3Z7si9zsokoG6MXDcdi1LGny7A0KwownmPvUQ==
+"@scalar/openapi-types@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.2.2.tgz#59ddb4ff62c0dd0dbeb4376a8ebd2b15b32f5e4c"
+  integrity sha512-fwWboUf3W5U4qWU7nj4jrs+KYilnfKyVp0d6LC1ejB2aROgWXIAscRtVaPLPaNLpTZOBsMC8XpiAPm3/SlU+mA==
   dependencies:
-    zod "^3.23.8"
+    zod "3.24.1"
 
-"@scalar/types@0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.1.11.tgz#9d40b63e27764d46a8b6b88f99f292edc2d295c1"
-  integrity sha512-fNcaZbZKoZ2PvoW+KJHmk4au8ZukgWlb6qLK3k/SLkfsTggN3DO4PR57ch6cyl2WhwENNbw+iI+ss7fTRcPnOA==
+"@scalar/types@0.1.14":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.1.14.tgz#b3367be4f7636560d6cee944d781264895f0d4c2"
+  integrity sha512-N7qZ9qARJfi4Gl5MEsRfwPHFWs68qDXWQ+jGi05LGExDqErAJStc4PPkEmxt44uSO4+TVx4ADxWB6xNoGMG/Zg==
   dependencies:
-    "@scalar/openapi-types" "0.2.1"
-    "@unhead/schema" "^1.11.11"
+    "@scalar/openapi-types" "0.2.2"
     nanoid "^5.1.5"
-    type-fest "^4.20.0"
-    zod "^3.23.8"
+    zod "3.24.1"
 
 "@sinclair/typebox@0.25.24":
   version "0.25.24"
@@ -888,14 +886,6 @@
   version "12.20.55"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.55.tgz#c329cbd434c42164f846b909bd6f85b5537f6240"
   integrity sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==
-
-"@unhead/schema@^1.11.11":
-  version "1.11.13"
-  resolved "https://registry.yarnpkg.com/@unhead/schema/-/schema-1.11.13.tgz#475f1b93d761b75beef6ba0e9387b771e0f25ed9"
-  integrity sha512-fIpQx6GCpl99l4qJXsPqkXxO7suMccuLADbhaMSkeXnVEi4ZIle+l+Ri0z+GHAEpJj17FMaQdO5n9FMSOMUxkw==
-  dependencies:
-    hookable "^5.5.3"
-    zhead "^2.2.4"
 
 "@upstash/redis@^1.34.0":
   version "1.34.0"
@@ -2077,11 +2067,6 @@ hono@4.7.8:
   resolved "https://registry.yarnpkg.com/hono/-/hono-4.7.8.tgz#f84ffd39b69f1c851fe0b58efb207ee2b2cdac3a"
   integrity sha512-PCibtFdxa7/Ldud9yddl1G81GjYaeMYYTq4ywSaNsYbB1Lug4mwtOMJf2WXykL0pntYwmpRJeOI3NmoDgD+Jxw==
 
-hookable@^5.5.3:
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.5.3.tgz#6cfc358984a1ef991e2518cb9ed4a778bbd3215d"
-  integrity sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==
-
 http-errors@1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.7.3.tgz#6c619e4f9c60308c38519498c14fbb10aacebb06"
@@ -3249,11 +3234,6 @@ turbo@2.5.2:
     turbo-windows-64 "2.5.2"
     turbo-windows-arm64 "2.5.2"
 
-type-fest@^4.20.0:
-  version "4.38.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.38.0.tgz#659fa14d1a71c2811400aa3b5272627e0c1e6b96"
-  integrity sha512-2dBz5D5ycHIoliLYLi0Q2V7KRaDlH0uWIvmk7TYlAg5slqwiPv1ezJdZm1QEM0xgk29oYWMCbIG7E6gHpvChlg==
-
 typescript@4.9.5:
   version "4.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
@@ -3536,12 +3516,12 @@ yn@3.1.1:
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 
-zhead@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/zhead/-/zhead-2.2.4.tgz#87cd1e2c3d2f465fa9f43b8db23f9716dfe6bed7"
-  integrity sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==
+zod@3.24.1:
+  version "3.24.1"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.1.tgz#27445c912738c8ad1e9de1bea0359fa44d9d35ee"
+  integrity sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==
 
-zod@3.24.4, zod@^3.23.8:
+zod@3.24.4:
   version "3.24.4"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.4.tgz#e2e2cca5faaa012d76e527d0d36622e0a90c315f"
   integrity sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==
