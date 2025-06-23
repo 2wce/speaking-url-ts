@@ -780,19 +780,19 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.3.tgz#ac25a84041e56f1b0d65d8497ba5b9a1f4b30eda"
-  integrity sha512-OedH8YQriBsE7JnCN2ly4p3u7iobjzAoDkxD/o1hiF55m6WRicvtklEdByHlceu9UnJ/znikZ50ymo98uG3aqA==
+"@scalar/core@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.4.tgz#8b17f8dcda2fbd8dd3a5006ad003a3790faa0082"
+  integrity sha512-5MHmi7TbMXBlR2TcrGh7SIxNzGABf5IxiV7R8h4kyaSwlvc+tg8uo/qwDdTK/psql764VieRHaH7gdL9tu+8+w==
   dependencies:
-    "@scalar/types" "0.2.3"
+    "@scalar/types" "0.2.4"
 
-"@scalar/hono-api-reference@0.9.4":
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.4.tgz#3b09e14dbbf133caea1679f84fa917286cb2fe88"
-  integrity sha512-pAUWS8MRGcS5VjMjAVd6DrhST63NpVXGel2BbYsKPQAaONwwA3hU30fAFxSs3PUGA8M7q+e76F6w4ALBtHxLRA==
+"@scalar/hono-api-reference@0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.6.tgz#191947732d72c764afa5065c476ae5fec8ab9dbb"
+  integrity sha512-P/dG41l+shL8lv7GcOpygkG6QqWl+lKHmfidBtXA22QMioSR9G1JT4Hyaxj0FOAdoLKCaMqzGk3ouJ438JeUkA==
   dependencies:
-    "@scalar/core" "0.3.3"
+    "@scalar/core" "0.3.4"
 
 "@scalar/openapi-types@0.3.3":
   version "0.3.3"
@@ -801,10 +801,10 @@
   dependencies:
     zod "3.24.1"
 
-"@scalar/types@0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.3.tgz#79be31eb556cb55210cd22988f22ae0ea49abd1e"
-  integrity sha512-K1/Vp5xaQ8TEGDYwHg88OBuQWJRWrE3ToZ0Z2LJwskcY1Eg+uDiRQXKF4QPngZzu5rrWgRErAq4yte4Y7omqgA==
+"@scalar/types@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.4.tgz#5e2d92484e16313557350f3eca1639a20fd75a6a"
+  integrity sha512-OpsNJN0r3hVVR8mF1YDO+YioeRmva/7pPravDh3GsWNQOSBOaFzLac8IkRLI+gBMpsIcJq1s+lisqPg+GHNiaA==
   dependencies:
     "@scalar/openapi-types" "0.3.3"
     nanoid "^5.1.5"
