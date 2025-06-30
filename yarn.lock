@@ -780,34 +780,34 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.3.4":
+"@scalar/core@0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.5.tgz#c07d15d8cb51ead36ab16a2ab2ff83098f2ca533"
+  integrity sha512-tcLLaGT/otQuEZzTtWUlnBMtcs95gcqwJSQCHqDui2v/+2ctV3FKjGJFoZLutICmQaSGLk0zNt14w39/VAsEqw==
+  dependencies:
+    "@scalar/types" "0.2.5"
+
+"@scalar/hono-api-reference@0.9.7":
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.7.tgz#7fd4a94b5f692b812f18fef04c8efd491d72e2dd"
+  integrity sha512-IJngqUlvIEZ7e4VrUUdviNbGQIx6NoHb7XrkTAUMLYvcTw1J3TcdFY4i7hWiD4bp2z+pVbi3UFStlt7y6KzdUA==
+  dependencies:
+    "@scalar/core" "0.3.5"
+
+"@scalar/openapi-types@0.3.4":
   version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.4.tgz#8b17f8dcda2fbd8dd3a5006ad003a3790faa0082"
-  integrity sha512-5MHmi7TbMXBlR2TcrGh7SIxNzGABf5IxiV7R8h4kyaSwlvc+tg8uo/qwDdTK/psql764VieRHaH7gdL9tu+8+w==
-  dependencies:
-    "@scalar/types" "0.2.4"
-
-"@scalar/hono-api-reference@0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.6.tgz#191947732d72c764afa5065c476ae5fec8ab9dbb"
-  integrity sha512-P/dG41l+shL8lv7GcOpygkG6QqWl+lKHmfidBtXA22QMioSR9G1JT4Hyaxj0FOAdoLKCaMqzGk3ouJ438JeUkA==
-  dependencies:
-    "@scalar/core" "0.3.4"
-
-"@scalar/openapi-types@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.3.3.tgz#52b9ed170e5e0ac59f128d65bf41347d2ad0220c"
-  integrity sha512-mr3OvbCyvuzSDgv9gR9D3pJAsl82BRNBp1P8ldgRgKF4Wiswfa7nQeKibpX0kHSGXLgiyvxWJULUFwgdWMXNNA==
+  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.3.4.tgz#1f629c00083330258ba94445fbc8f3181ddc082d"
+  integrity sha512-MfHRX1jqLcf6kwDDeXSYENywZXJLZx9Jn8r7DCQApw2QJW/yxb4GnCU0vygCh5KBk1GVJ4x6pyXiWNozb+fGAw==
   dependencies:
     zod "3.24.1"
 
-"@scalar/types@0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.4.tgz#5e2d92484e16313557350f3eca1639a20fd75a6a"
-  integrity sha512-OpsNJN0r3hVVR8mF1YDO+YioeRmva/7pPravDh3GsWNQOSBOaFzLac8IkRLI+gBMpsIcJq1s+lisqPg+GHNiaA==
+"@scalar/types@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.5.tgz#805d9c58c80f4c7be6cf29f97ea52c8e039a6d7c"
+  integrity sha512-kXulR6peh+zzP9DFqhncUKtvnV59e6Cf/y3N5Q8RQIa8huRB+901MbXewUEXV4MXYzMMBKJXRgc1LwwbAZUtRA==
   dependencies:
-    "@scalar/openapi-types" "0.3.3"
-    nanoid "^5.1.5"
+    "@scalar/openapi-types" "0.3.4"
+    nanoid "5.1.5"
     zod "3.24.1"
 
 "@sinclair/typebox@0.25.24":
@@ -2533,15 +2533,15 @@ muggle-string@^0.4.1:
   resolved "https://registry.yarnpkg.com/muggle-string/-/muggle-string-0.4.1.tgz#3b366bd43b32f809dc20659534dd30e7c8a0d328"
   integrity sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==
 
+nanoid@5.1.5:
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.1.5.tgz#f7597f9d9054eb4da9548cdd53ca70f1790e87de"
+  integrity sha512-Ir/+ZpE9fDsNH0hQ3C68uyThDXzYcim2EqcZ8zn8Chtt1iylPT9xXJB0kPCnqzgcEGikO9RxSrh63MsmVCU7Fw==
+
 nanoid@^3.3.11:
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.11.tgz#4f4f112cefbe303202f2199838128936266d185b"
   integrity sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==
-
-nanoid@^5.1.5:
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.1.5.tgz#f7597f9d9054eb4da9548cdd53ca70f1790e87de"
-  integrity sha512-Ir/+ZpE9fDsNH0hQ3C68uyThDXzYcim2EqcZ8zn8Chtt1iylPT9xXJB0kPCnqzgcEGikO9RxSrh63MsmVCU7Fw==
 
 node-fetch@2.6.7:
   version "2.6.7"
