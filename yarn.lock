@@ -477,13 +477,14 @@
   resolved "https://registry.yarnpkg.com/@hono-rate-limiter/redis/-/redis-0.1.4.tgz#950fe61db4452d1c8ced57bb38bc3b25b79c6252"
   integrity sha512-RSrVX5N2Oo/xXApskegu667cBVHyr8RXGWnbRDGjU2py8pN4BttEKSHA0iKi3BAwh1xSkENgDRng4tpFD9DbKg==
 
-"@hono/zod-openapi@0.19.8":
-  version "0.19.8"
-  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.19.8.tgz#f116b8d54008dcdf5edf26e0237a52adef18cf5e"
-  integrity sha512-CHUSW0K+bDGUYXovxQSbVjZffzoPeTsGu6wevPoGSmBdPuUw5yZqDeomnvyAAAAvEjhLQPlAsUyASc1Zi35exQ==
+"@hono/zod-openapi@0.19.9":
+  version "0.19.9"
+  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.19.9.tgz#c96b0c829ede726ac8c2586023c4d98ce2e2c11a"
+  integrity sha512-TonPfh8xUdsdzWNMiKOYSG4Wk2DkZIShHZoXkdOSjPmqpnobXpvSQU3w3XmB7N2t12I2NnnoGSHyMj+BXk+1bw==
   dependencies:
     "@asteasolutions/zod-to-openapi" "^7.3.0"
     "@hono/zod-validator" "^0.7.0"
+    openapi3-ts "^4.5.0"
 
 "@hono/zod-validator@0.7.0", "@hono/zod-validator@^0.7.0":
   version "0.7.0"
@@ -2583,12 +2584,12 @@ once@~1.3.0:
   dependencies:
     wrappy "1"
 
-openapi3-ts@^4.1.2:
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/openapi3-ts/-/openapi3-ts-4.3.3.tgz#de43a2f2fab912939495c169b92d81fe78a4ec10"
-  integrity sha512-LKkzBGJcZ6wdvkKGMoSvpK+0cbN5Xc3XuYkJskO+vjEQWJgs1kgtyUk0pjf8KwPuysv323Er62F5P17XQl96Qg==
+openapi3-ts@^4.1.2, openapi3-ts@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/openapi3-ts/-/openapi3-ts-4.5.0.tgz#1241fcdac0a711d654dfa74feebc2ce7a210790a"
+  integrity sha512-jaL+HgTq2Gj5jRcfdutgRGLosCy/hT8sQf6VOy+P+g36cZOjI1iukdPnijC+4CmeRzg/jEllJUboEic2FhxhtQ==
   dependencies:
-    yaml "^2.4.5"
+    yaml "^2.8.0"
 
 os-paths@^4.0.1:
   version "4.4.0"
@@ -3551,10 +3552,10 @@ yallist@^5.0.0:
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-5.0.0.tgz#00e2de443639ed0d78fd87de0d27469fbcffb533"
   integrity sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==
 
-yaml@^2.4.5:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.5.0.tgz#c6165a721cf8000e91c36490a41d7be25176cf5d"
-  integrity sha512-2wWLbGbYDiSqqIKoPjar3MPgB94ErzCtrNE1FdqGuaO0pi2JGjmE8aW8TDZwzU7vuxcGRdL/4gPQwQ7hD5AMSw==
+yaml@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.0.tgz#15f8c9866211bdc2d3781a0890e44d4fa1a5fff6"
+  integrity sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==
 
 yauzl-clone@^1.0.4:
   version "1.0.4"
