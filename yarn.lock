@@ -781,33 +781,33 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.3.5":
+"@scalar/core@0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.7.tgz#4121d9c825e1edea29421d93c16bc9d0c9d4f41e"
+  integrity sha512-Qeq+DfOWxjVHFff9qx0w9gVK6FmgqJtpN3je5C3elKVXNPC/7rxG4BfAuced+SdnogaVzpb9rvvHPblMgsKrwQ==
+  dependencies:
+    "@scalar/types" "0.2.7"
+
+"@scalar/hono-api-reference@0.9.9":
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.9.tgz#28bccef9cc4e77c2de1188ce7cd3ae4e89ce0c3e"
+  integrity sha512-8oJ1xaYVHT3/7Go5FtcZqqsm4NkJL0Jxf3ZipXjoJcvhyiBXyQdXGNnKJVXSci2BhQMqMav6pXzkje8gq74ZAg==
+  dependencies:
+    "@scalar/core" "0.3.7"
+
+"@scalar/openapi-types@0.3.5":
   version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.5.tgz#c07d15d8cb51ead36ab16a2ab2ff83098f2ca533"
-  integrity sha512-tcLLaGT/otQuEZzTtWUlnBMtcs95gcqwJSQCHqDui2v/+2ctV3FKjGJFoZLutICmQaSGLk0zNt14w39/VAsEqw==
-  dependencies:
-    "@scalar/types" "0.2.5"
-
-"@scalar/hono-api-reference@0.9.7":
-  version "0.9.7"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.7.tgz#7fd4a94b5f692b812f18fef04c8efd491d72e2dd"
-  integrity sha512-IJngqUlvIEZ7e4VrUUdviNbGQIx6NoHb7XrkTAUMLYvcTw1J3TcdFY4i7hWiD4bp2z+pVbi3UFStlt7y6KzdUA==
-  dependencies:
-    "@scalar/core" "0.3.5"
-
-"@scalar/openapi-types@0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.3.4.tgz#1f629c00083330258ba94445fbc8f3181ddc082d"
-  integrity sha512-MfHRX1jqLcf6kwDDeXSYENywZXJLZx9Jn8r7DCQApw2QJW/yxb4GnCU0vygCh5KBk1GVJ4x6pyXiWNozb+fGAw==
+  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.3.5.tgz#8691db9ffc071dc246462a032fc5f66d09264272"
+  integrity sha512-/iTUSJMMHVMIFJngeIjTVtU5lwIMNyEIm25e0XtDV0veW6zmIhLsaH2/nwpIgR1iXVyd/uWMyMrtQW329s3c4w==
   dependencies:
     zod "3.24.1"
 
-"@scalar/types@0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.5.tgz#805d9c58c80f4c7be6cf29f97ea52c8e039a6d7c"
-  integrity sha512-kXulR6peh+zzP9DFqhncUKtvnV59e6Cf/y3N5Q8RQIa8huRB+901MbXewUEXV4MXYzMMBKJXRgc1LwwbAZUtRA==
+"@scalar/types@0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.7.tgz#be7f44f14bc33e5733fee3715e7dc35452b38cd8"
+  integrity sha512-C4sbkqzCeQWYWaOUIQPdVm6g3FhUkcqpVorArApv7WfCEgVn1KLOOYELFMWwCHim2GnrZblVVUPubf0UXjUcLA==
   dependencies:
-    "@scalar/openapi-types" "0.3.4"
+    "@scalar/openapi-types" "0.3.5"
     nanoid "5.1.5"
     zod "3.24.1"
 
