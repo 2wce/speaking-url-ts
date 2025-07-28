@@ -486,12 +486,7 @@
     "@hono/zod-validator" "^0.7.2"
     openapi3-ts "^4.5.0"
 
-"@hono/zod-validator@0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.7.1.tgz#4b41a7689488a0d964f933b2a045dfc92edecb69"
-  integrity sha512-8+vJT1RvezAx5sN7hiZ5Mis0RMuFL77nBEcqQQgT9ufoLkxr+7ll461WlBJQcGoQSY6EGMClVae19v3s/7bbgQ==
-
-"@hono/zod-validator@^0.7.2":
+"@hono/zod-validator@0.7.2", "@hono/zod-validator@^0.7.2":
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.7.2.tgz#1ab23efb89c777d718f4e14db3d5592f606fae42"
   integrity sha512-ub5eL/NeZ4eLZawu78JpW/J+dugDAYhwqUIdp9KYScI6PZECij4Hx4UsrthlEUutqDDhPwRI0MscUfNkvn/mqQ==
