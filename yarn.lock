@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@asteasolutions/zod-to-openapi@^7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@asteasolutions/zod-to-openapi/-/zod-to-openapi-7.3.0.tgz#4ebdb9f1e5ac410172b04bbfff3013a1b09cfc83"
-  integrity sha512-7tE/r1gXwMIvGnXVUdIqUhCU1RevEFC4Jk6Bussa0fk1ecbnnINkZzj1EOAJyE/M3AI25DnHT/zKQL1/FPFi8Q==
+"@asteasolutions/zod-to-openapi@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@asteasolutions/zod-to-openapi/-/zod-to-openapi-8.0.0.tgz#21ec1289a6dcfa4bd90911090f89e86c6d072c9d"
+  integrity sha512-C56hBPiraeSWUNLz8mB5Z0/0LdfaFD5d6WB/+hdUg0MiC7egTgvWRGh3M3jZ3CRl03l/NJWnmv5D3OUAz+JGeg==
   dependencies:
     openapi3-ts "^4.1.2"
 
@@ -477,19 +477,24 @@
   resolved "https://registry.yarnpkg.com/@hono-rate-limiter/redis/-/redis-0.1.4.tgz#950fe61db4452d1c8ced57bb38bc3b25b79c6252"
   integrity sha512-RSrVX5N2Oo/xXApskegu667cBVHyr8RXGWnbRDGjU2py8pN4BttEKSHA0iKi3BAwh1xSkENgDRng4tpFD9DbKg==
 
-"@hono/zod-openapi@0.19.10":
-  version "0.19.10"
-  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-0.19.10.tgz#1002cdd6d07c9ac8aa9ae98e076d5f272ddcc9df"
-  integrity sha512-dpoS6DenvoJyvxtQ7Kd633FRZ/Qf74+4+o9s+zZI8pEqnbjdF/DtxIib08WDpCaWabMEJOL5TXpMgNEZvb7hpA==
+"@hono/zod-openapi@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-1.0.2.tgz#8fd66d7c84c9fe8b60d7947990ede2415907489d"
+  integrity sha512-zbxUZEnA+NaeotXRI2YPL5GEbz38DiO7Zp1nx/7yXOA2ITkcASYsYe/My/I38c44GCu+oUVM899zn4TBVn7JRg==
   dependencies:
-    "@asteasolutions/zod-to-openapi" "^7.3.0"
-    "@hono/zod-validator" "^0.7.1"
+    "@asteasolutions/zod-to-openapi" "^8.0.0"
+    "@hono/zod-validator" "^0.7.2"
     openapi3-ts "^4.5.0"
 
-"@hono/zod-validator@0.7.1", "@hono/zod-validator@^0.7.1":
+"@hono/zod-validator@0.7.1":
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.7.1.tgz#4b41a7689488a0d964f933b2a045dfc92edecb69"
   integrity sha512-8+vJT1RvezAx5sN7hiZ5Mis0RMuFL77nBEcqQQgT9ufoLkxr+7ll461WlBJQcGoQSY6EGMClVae19v3s/7bbgQ==
+
+"@hono/zod-validator@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.7.2.tgz#1ab23efb89c777d718f4e14db3d5592f606fae42"
+  integrity sha512-ub5eL/NeZ4eLZawu78JpW/J+dugDAYhwqUIdp9KYScI6PZECij4Hx4UsrthlEUutqDDhPwRI0MscUfNkvn/mqQ==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
