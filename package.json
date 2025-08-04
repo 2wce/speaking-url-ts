@@ -18,7 +18,7 @@
     "@types/node": "24.1.0",
     "lefthook": "1.12.2",
     "turbo": "2.5.5",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "scripts": {
     "build": "turbo run build",
