@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@asteasolutions/zod-to-openapi@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@asteasolutions/zod-to-openapi/-/zod-to-openapi-8.0.0.tgz#21ec1289a6dcfa4bd90911090f89e86c6d072c9d"
-  integrity sha512-C56hBPiraeSWUNLz8mB5Z0/0LdfaFD5d6WB/+hdUg0MiC7egTgvWRGh3M3jZ3CRl03l/NJWnmv5D3OUAz+JGeg==
+"@asteasolutions/zod-to-openapi@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@asteasolutions/zod-to-openapi/-/zod-to-openapi-8.1.0.tgz#7fa984c72f796f9c266fd8c6aabecaa22de66115"
+  integrity sha512-tQFxVs05J/6QXXqIzj6rTRk3nj1HFs4pe+uThwE95jL5II2JfpVXkK+CqkO7aT0Do5AYqO6LDrKpleLUFXgY+g==
   dependencies:
     openapi3-ts "^4.1.2"
 
@@ -477,12 +477,12 @@
   resolved "https://registry.yarnpkg.com/@hono-rate-limiter/redis/-/redis-0.1.4.tgz#950fe61db4452d1c8ced57bb38bc3b25b79c6252"
   integrity sha512-RSrVX5N2Oo/xXApskegu667cBVHyr8RXGWnbRDGjU2py8pN4BttEKSHA0iKi3BAwh1xSkENgDRng4tpFD9DbKg==
 
-"@hono/zod-openapi@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-1.0.2.tgz#8fd66d7c84c9fe8b60d7947990ede2415907489d"
-  integrity sha512-zbxUZEnA+NaeotXRI2YPL5GEbz38DiO7Zp1nx/7yXOA2ITkcASYsYe/My/I38c44GCu+oUVM899zn4TBVn7JRg==
+"@hono/zod-openapi@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-1.1.0.tgz#b2b268ca6da914cf5a18a3aaee39d319d4785c89"
+  integrity sha512-S4jVR+A/jI4MA/RKJqmpjdHAN2l/EsqLnKHBv68x3WxV1NGVe3Sh7f6LV6rHEGYNHfiqpD75664A/erc+r9dQA==
   dependencies:
-    "@asteasolutions/zod-to-openapi" "^8.0.0"
+    "@asteasolutions/zod-to-openapi" "^8.1.0"
     "@hono/zod-validator" "^0.7.2"
     openapi3-ts "^4.5.0"
 
