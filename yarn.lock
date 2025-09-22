@@ -794,19 +794,19 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.3.16":
-  version "0.3.16"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.16.tgz#211f350ab0a23d4227323c55dceb1ee511712b95"
-  integrity sha512-gZLKu6yzc9Md8X29OX7hN/Cgl95ReHK+t/HXbaT3O8hsbCc9JyhEZiKFpTfCH9vcgyYQ91fcq9w8tT4BVpFJUw==
+"@scalar/core@0.3.17":
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.17.tgz#ca6fec35e8cfeafc881f9e0a4ebd058c3e1a2063"
+  integrity sha512-G6tP+2oorFA90szI8DGiEQ23SmobiuhN93GfTJNpFMhz/kdEtC4lcYawAxL1tWkZhlK/QYRcaCZcVzmpTUgBCA==
   dependencies:
-    "@scalar/types" "0.2.15"
+    "@scalar/types" "0.2.16"
 
-"@scalar/hono-api-reference@0.9.18":
-  version "0.9.18"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.18.tgz#773df1069537317ba80f6ed3b6c40de6a8bb38fe"
-  integrity sha512-YYD0HY4ru3RRA8DQcIQiF5OBJntZSSfFu14KbU/Pdd5W5x57+BQH3cAa9aDJ7M1+wOD9a2iJUSCjTh8K3GOhHw==
+"@scalar/hono-api-reference@0.9.19":
+  version "0.9.19"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.19.tgz#f34c50d6135b04f101b877b04982919a232ad666"
+  integrity sha512-MeBdIwuAAhwvsUt1f9174wASu0C8b4WrXuVdC/6FjrsTxLHSbJVx+XFzZAKF5ex+1kaXjvYrm3fiovRFHLyfJA==
   dependencies:
-    "@scalar/core" "0.3.16"
+    "@scalar/core" "0.3.17"
 
 "@scalar/openapi-types@0.3.7":
   version "0.3.7"
@@ -815,10 +815,10 @@
   dependencies:
     zod "3.24.1"
 
-"@scalar/types@0.2.15":
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.15.tgz#0aeb1e219e54ed4ea604158d16820e89d1b77593"
-  integrity sha512-x2aCNmkDqr3VXUHjw7wPXK9KZwHbGGMs4NuxJIzy9MbAxUS9li8HXGG0K82Q5fDm47SAM+68z0/tnWkJpu+kzg==
+"@scalar/types@0.2.16":
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.2.16.tgz#2467a98a83208b09be5b79d9add252b8496c4726"
+  integrity sha512-XWff9jWfYaj6q3ww94x66S6Q58u/3kA1sDOUhLAwb9va7r58bzk3NRwLOkEEdJmyEns1MEJAM53mY8KRWX6elA==
   dependencies:
     "@scalar/openapi-types" "0.3.7"
     nanoid "5.1.5"
