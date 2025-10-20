@@ -499,16 +499,16 @@
   resolved "https://registry.yarnpkg.com/@hono-rate-limiter/redis/-/redis-0.1.4.tgz#950fe61db4452d1c8ced57bb38bc3b25b79c6252"
   integrity sha512-RSrVX5N2Oo/xXApskegu667cBVHyr8RXGWnbRDGjU2py8pN4BttEKSHA0iKi3BAwh1xSkENgDRng4tpFD9DbKg==
 
-"@hono/zod-openapi@1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-1.1.3.tgz#a2ddba397818d88fd3a956fcfc8276f43f24d942"
-  integrity sha512-ikA8p0Jt7yplxOqbYwdh8rCQWaGN4bu8zK1HbCWqfWT9clo87L32D0eAQ/r0tJodtZbTV5d1vPB75FCkUt1Jdg==
+"@hono/zod-openapi@1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@hono/zod-openapi/-/zod-openapi-1.1.4.tgz#9333353e4ebc5f73e3b2da2bb46f38c07f0df637"
+  integrity sha512-4BbOtd6oKg20yo6HLluVbEycBLLIfdKX5o/gUSoKZ2uBmeP4Og/VDfIX3k9pbNEX5W3fRkuPeVjGA+zaQDVY1A==
   dependencies:
     "@asteasolutions/zod-to-openapi" "^8.1.0"
-    "@hono/zod-validator" "^0.7.3"
+    "@hono/zod-validator" "^0.7.4"
     openapi3-ts "^4.5.0"
 
-"@hono/zod-validator@0.7.4", "@hono/zod-validator@^0.7.3":
+"@hono/zod-validator@0.7.4", "@hono/zod-validator@^0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@hono/zod-validator/-/zod-validator-0.7.4.tgz#74d8b43f456b162ec364a4132893a9471e6c210f"
   integrity sha512-biKGn3BRJVaftZlIPMyK+HCe/UHAjJ6sH0UyXe3+v0OcgVr9xfImDROTJFLtn9e3XEEAHGZIM9U6evu85abm8Q==
