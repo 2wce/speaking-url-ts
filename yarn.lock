@@ -907,35 +907,35 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.3.18":
-  version "0.3.18"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.18.tgz#cff353ca41407be6e471cf24e5ae83e7cb8ea462"
-  integrity sha512-STi6LiJTqOYwz4VhKi61SYhqOTT8TJ3M//XQyT3OwwfY0iBR/HNKUNnHsIWJdwaoGO4Ida5jj4L0JmpKtwQxTQ==
+"@scalar/core@0.3.20":
+  version "0.3.20"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.20.tgz#46416d562d18c31d9b78eab77cd4ff452e779392"
+  integrity sha512-bIlrePx41pSvjDcaJPa9YVVhbSm0N9SKQm2Fzl489S0bUVToyXIQtMFVR4i+BmXGjOcATm/66ELW4vdXRjHoRA==
   dependencies:
-    "@scalar/types" "0.3.0"
+    "@scalar/types" "0.3.2"
 
-"@scalar/hono-api-reference@0.9.20":
-  version "0.9.20"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.20.tgz#9b6b0be0a5cad5fe557a245a3491773726aed745"
-  integrity sha512-KZX+fN9E3UcH8HBDIuwm3e4bSonxnEEiRW2XdqHMPK3ToMrz4ulxckZL2/ByIuzzogO7umq7eRieJchfH61SHg==
+"@scalar/hono-api-reference@0.9.22":
+  version "0.9.22"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.22.tgz#5a3d4adf702678db5354681fff4fa9af6a154db9"
+  integrity sha512-utIz4F6YZj3QU/9HK4P1wIcHY8ceMbL7w+VahFbnmZbE3Gy+haaaHfhZOs2nAfdx1cKOhkm11/inZTtw8+I2bw==
   dependencies:
-    "@scalar/core" "0.3.18"
+    "@scalar/core" "0.3.20"
 
-"@scalar/openapi-types@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.4.0.tgz#df534fd7e22a0c7ea33320ec43e966263da0215d"
-  integrity sha512-vdFLzz7vETw6kS3bxWUHCBeFtJOnr1bk/+FXKyxKkd6TbcyT6USXkoelI704IaBdoXyOgGX10FD1IVrs4FwUow==
+"@scalar/openapi-types@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@scalar/openapi-types/-/openapi-types-0.5.0.tgz#820a8618009dce6ddd85979f761003bd5417de14"
+  integrity sha512-HJBcLa+/mPP+3TCcQngj/iW5UqynRosOQdEETXjmdy6Ngw8wBjwIcT6C86J5jufJ6sI8++HYnt+e7pAvp5FO6A==
   dependencies:
     zod "4.1.11"
 
-"@scalar/types@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.3.0.tgz#5c49b01132598aafc59c6cd102dae3bb2abe5217"
-  integrity sha512-RVL4waBX2jpshVBU8l1J8gsG+Ai9oRoTN1Zc1+yaO2WG/ZMXOBtq1noJWpUk2c2i16E1oxmRZC8/nPNFRbkxog==
+"@scalar/types@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.3.2.tgz#ca3fa11ea21c301ede77297393a9155c814a1495"
+  integrity sha512-+X10CCvG57nAqYbTGteiSzRFQcMYm7DLfCRMeEfiWQ9Bq2ladat17XsMSvkvwcfpOSlsoepWf3P5dErERUSOQQ==
   dependencies:
-    "@scalar/openapi-types" "0.4.0"
+    "@scalar/openapi-types" "0.5.0"
     nanoid "5.1.5"
-    type-fest "4.41.0"
+    type-fest "5.0.0"
     zod "4.1.11"
 
 "@sinclair/typebox@0.25.24":
@@ -3327,6 +3327,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+tagged-tag@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tagged-tag/-/tagged-tag-1.0.0.tgz#a0b5917c2864cba54841495abfa3f6b13edcf4d6"
+  integrity sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==
+
 tar@6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/tar/-/tar-6.2.1.tgz#717549c541bc3c2af15751bea94b1dd068d4b03a"
@@ -3507,10 +3512,12 @@ turbo@2.5.8:
     turbo-windows-64 "2.5.8"
     turbo-windows-arm64 "2.5.8"
 
-type-fest@4.41.0:
-  version "4.41.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.41.0.tgz#6ae1c8e5731273c2bf1f58ad39cbae2c91a46c58"
-  integrity sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==
+type-fest@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.0.0.tgz#4d3967e358f3941129f7ef6483be8ca8599a028a"
+  integrity sha512-GeJop7+u7BYlQ6yQCAY1nBQiRSHR+6OdCEtd8Bwp9a3NK3+fWAVjOaPKJDteB9f6cIJ0wt4IfnScjLG450EpXA==
+  dependencies:
+    tagged-tag "^1.0.0"
 
 typescript@4.9.5:
   version "4.9.5"
