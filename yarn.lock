@@ -1049,24 +1049,24 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.3.23":
-  version "0.3.23"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.23.tgz#0595e6fe00ffb39d620319d4f929c4200a3139ec"
-  integrity sha512-hop7LVR3MKB2VpS8dly3gmmbB3lBGxQRtL0pBaC77zFMRHoBv1DuB2bj8l4gxd5grzitJ1LsYduvywLAMY9F6g==
+"@scalar/core@0.3.24":
+  version "0.3.24"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.24.tgz#eea682207968b83e941b70008b76ca5e974c157e"
+  integrity sha512-8d/xcjcExGRAzg+49peLIjP1XyDKyuJlJXx0J6Zy6k3gFHjA/2o98FhZRBVvVCvzeFKTfz3hg2CQHrm50JonBA==
   dependencies:
-    "@scalar/types" "0.5.0"
+    "@scalar/types" "0.5.1"
 
-"@scalar/hono-api-reference@0.9.25":
-  version "0.9.25"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.25.tgz#b0f9ddeb14116ff57b21de7054b0cae0cec89cd4"
-  integrity sha512-ZEQAhvVU/FXdJs8+rVXdfWjwzkE+M6Zr+4W+zNhy8DF17BIpxFXfVL7i3OxK1V/4EtkTplkETjYGTR4ju3RFZw==
+"@scalar/hono-api-reference@0.9.26":
+  version "0.9.26"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.26.tgz#4a503dd4e7cff66c90a7643ab64ab6b55069d5f4"
+  integrity sha512-QcGTQ5vXu5f3W1ZmofdSHYqKMCPwQgBLuhAQSPRpaW3+G0XDI7ZYImqKoXzrgHp3PNGn2xTV9oYbTNmLHbfbOA==
   dependencies:
-    "@scalar/core" "0.3.23"
+    "@scalar/core" "0.3.24"
 
-"@scalar/types@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.5.0.tgz#4bdbaf50316c88847562771dad50b5962713e81e"
-  integrity sha512-imDMuTieOc5kHM9/Kt/1lmiI5ZtusuaYlzsXTP99IsWvD8mJ7ivF73lPBRj4PKtg4vY+ta5CO/vJpvnCYandRg==
+"@scalar/types@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.5.1.tgz#6f279873261bbdc2e20bb39fa3bcc1d622665561"
+  integrity sha512-+BSZlfDc5tqFnB+MEJ16o5x86PkKfRK4UYgEv9T5LYmaGmStZF110GoYNbUW6lWRmjFzdPyqS8S7Tijwqd7hXA==
   dependencies:
     nanoid "5.1.5"
     type-fest "5.0.0"
