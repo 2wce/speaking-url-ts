@@ -14,7 +14,7 @@
     "hono": "4.11.1",
     "hono-rate-limiter": "0.5.2",
     "speaking-url-ts": "0.6.2",
-    "zod": "4.2.1"
+    "zod": "4.3.5"
   },
   "devDependencies": {
     "vercel": "50.1.3"
