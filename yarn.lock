@@ -1054,31 +1054,31 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/core@0.3.34":
-  version "0.3.34"
-  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.34.tgz#2bbcdba7c0e032ff6c5bc5fad2750fe0d864c519"
-  integrity sha512-dZnpkrnjiPvPLa/sIdjoaxdVoYowWUqC5nCCXJI+29laMIII6dCze8ThxLPGN1b9gJ8cYcQwBrwr+RNCjqJgdQ==
+"@scalar/core@0.3.41":
+  version "0.3.41"
+  resolved "https://registry.yarnpkg.com/@scalar/core/-/core-0.3.41.tgz#b5c8da50250b75fe101b9bf79c4fe4c83515e587"
+  integrity sha512-IPgiHOSGBDfBcJELbev0lo+ZHc8Q/vA82neX0Ax1iHNGtf/munH+qN5I+p9rGRS60IRQAwABlUo31Y3Gw1c0EA==
   dependencies:
-    "@scalar/types" "0.5.10"
+    "@scalar/types" "0.6.6"
 
-"@scalar/helpers@0.2.9":
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.2.9.tgz#d213415849654945d645ef872784ab898cc60d85"
-  integrity sha512-Y4ffJF0yELdwZ0BKgonqn3SumIgRn1WKyYCVHD+TDM7qRFChdGRypyt20+efHs26fmJeyBAIIv2laICj5uimiw==
+"@scalar/helpers@0.2.15":
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.2.15.tgz#c711ba450b2e4c291a3625106bed425e441bdbfb"
+  integrity sha512-hMHXejGFVOS4HwCo7C2qddChuvMJs3sEOALo7gNOvwLS4dGLrW8flbSglDki4ttyremlKQstP5WJuPxmHQU3sA==
 
-"@scalar/hono-api-reference@0.9.37":
-  version "0.9.37"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.37.tgz#a1564e63b7019140dd93024793e4c8b295c65143"
-  integrity sha512-eprpFplQoirRmfC5fWo90jLQX5x01H7QS2XrRDmNES207eaEvtUZHyW9vPV7Bi9ltjrnqG8WK2oPMd/uZClptg==
+"@scalar/hono-api-reference@0.9.44":
+  version "0.9.44"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.9.44.tgz#4437eec8324ac1177877e267cadb579a7093f64b"
+  integrity sha512-NusQ3S/LYKmEMOwc5kbKi6Can1b0iHTL/145CxfT5klEXtazhzdiXtYNiPNS99vGYKjub7+oaFR/HXJz4y/w2w==
   dependencies:
-    "@scalar/core" "0.3.34"
+    "@scalar/core" "0.3.41"
 
-"@scalar/types@0.5.10":
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.5.10.tgz#41d1a17f02a09b961a3a7cc5324b9f863d7bed50"
-  integrity sha512-37qAHQC2J7O+Mt8u0HOZttTQPQ1OEWKWxo9SMbahYKTosL9k1KtTG2F3EB33EkW3WqEVQitkUKrM0+MVM2HeYQ==
+"@scalar/types@0.6.6":
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.6.6.tgz#97d569145a781e197c10f9277deb250fb56e36fb"
+  integrity sha512-nr3m23p5MnGy4Wb4JFT7aA+jzvYSs/AS40NUEoQMBE1IwtuvG5gtLL0uu6kWpDq4UAfrWGntlAQNX7G8X9D4sg==
   dependencies:
-    "@scalar/helpers" "0.2.9"
+    "@scalar/helpers" "0.2.15"
     nanoid "^5.1.6"
     type-fest "^5.3.1"
     zod "^4.3.5"

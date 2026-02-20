@@ -9,7 +9,7 @@
     "@hono-rate-limiter/redis": "0.1.4",
     "@hono/zod-openapi": "1.2.0",
     "@hono/zod-validator": "0.7.6",
-    "@scalar/hono-api-reference": "0.9.37",
+    "@scalar/hono-api-reference": "0.9.44",
     "@vercel/kv": "3.0.0",
     "hono": "4.11.10",
     "hono-rate-limiter": "0.5.3",
