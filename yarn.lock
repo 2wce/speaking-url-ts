@@ -1261,31 +1261,31 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
-"@scalar/client-side-rendering@0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.1.2.tgz#8336f11cbc2b87d69782ce2fb6bb9e10228b3142"
-  integrity sha512-gX2QIc+lpErO9RWkJmt02sBZoCOjyZ7EiLLEyGj7x9UKkk7E4zj6Wbk1eUPo6i3oIwhtZ+Vybj/xzexCK2bxwA==
+"@scalar/client-side-rendering@0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.1.3.tgz#58689181f181576f62c9d92b403cc3463a6a9b40"
+  integrity sha512-rUI5EQA8y0xivzqc/AwExZYW8HRfQSFxPxvvuLjHTCATpKz0xcQBGVJQIPOmp78NJyO8mnQmltE1AxIdtvdPGg==
   dependencies:
-    "@scalar/types" "0.9.1"
+    "@scalar/types" "0.9.2"
 
-"@scalar/helpers@0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.5.1.tgz#55c2b1bb9ad5cf23a4dae577c6e3e526060fab15"
-  integrity sha512-9VvPfv8b+YZVIFwR3SWeq4Y8ij/kU3/kf2M6NKcbf2iVyh63d8s0ssap5m/nOhiz/Puidv/29MAJlJCA0LRssA==
+"@scalar/helpers@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.5.2.tgz#7771c5f03dd4b014071d9d321069113fed438720"
+  integrity sha512-Pi1GAl8jO6ungmGj2sjDfCfqiBNrKW6HXDZmminV94ybGU/KtRLOqHwd0n9FIhY3j0RYGpGC0VCuniCICfQPHg==
 
-"@scalar/hono-api-reference@0.10.9":
-  version "0.10.9"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.10.9.tgz#5c832e0e2315db6cea2c16451657a8124622be1e"
-  integrity sha512-XLsdXGp8ta7fjYgcwD8xyopsF5KfO5h1qJMoNTjb4Tm1giu+TEkH+m+aBS3cv5FN9LA91Uym8SLWJm8yhgkdOA==
+"@scalar/hono-api-reference@0.10.10":
+  version "0.10.10"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.10.10.tgz#8f5d82815a46bfef2881045b2b8db81b03a58fcf"
+  integrity sha512-fAd+9UeCdF73O7kFFABNkBmpnrDRjX1wW94kgt+OHjqB5Uca4l0HvJTkh1O4k7afjsZx8VavA0x0FQ4Qgu9ZnQ==
   dependencies:
-    "@scalar/client-side-rendering" "0.1.2"
+    "@scalar/client-side-rendering" "0.1.3"
 
-"@scalar/types@0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.9.1.tgz#4b1989ab19e2d3ead4fb9430857ce1ce48142fb8"
-  integrity sha512-3EbkhtQc+XuDE8Ur1MPosM3YTACFIFNba4M3vGulqv8jcvhMXT+KWPvGUJxq0CDvySqjGa8cE6w85v8T+MjDng==
+"@scalar/types@0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.9.2.tgz#077affae59afbfe3823279f30e540e37c5bac1c8"
+  integrity sha512-aLn7QTHafpjrN/whup7U5/CHaoPPaYMNtz4L/2yfN5GDSy3AbDM7kV1q8s3nMQIhvC1uscxfriV+KhEND+xHvA==
   dependencies:
-    "@scalar/helpers" "0.5.1"
+    "@scalar/helpers" "0.5.2"
     nanoid "^5.1.6"
     type-fest "^5.3.1"
     zod "^4.3.5"
