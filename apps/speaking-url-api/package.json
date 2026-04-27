@@ -17,6 +17,6 @@
     "zod": "4.3.6"
   },
   "devDependencies": {
-    "vercel": "51.8.0"
+    "vercel": "52.0.0"
   }
 }
