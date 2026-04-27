@@ -2813,10 +2813,10 @@ hono-rate-limiter@0.5.3:
   resolved "https://registry.yarnpkg.com/hono-rate-limiter/-/hono-rate-limiter-0.5.3.tgz#29ee906b904edd38651f623630342b249d884b34"
   integrity sha512-M0DxbVMpPELEzLi0AJg1XyBHLGJXz7GySjsPoK+gc5YeeBsdGDGe+2RvVuCAv8ydINiwlbxqYMNxUEyYfRji/A==
 
-hono@4.12.14:
-  version "4.12.14"
-  resolved "https://registry.yarnpkg.com/hono/-/hono-4.12.14.tgz#4777c9512b7c84138e4f09e61e3d2fa305eb1414"
-  integrity sha512-am5zfg3yu6sqn5yjKBNqhnTX7Cv+m00ox+7jbaKkrLMRJ4rAdldd1xPd/JzbBWspqaQv6RSTrgFN95EsfhC+7w==
+hono@4.12.15:
+  version "4.12.15"
+  resolved "https://registry.yarnpkg.com/hono/-/hono-4.12.15.tgz#50302aae9a2b8ae6e5a1bab62e722f2259f9d0fb"
+  integrity sha512-qM0jDhFEaCBb4TxoW7f53Qrpv9RBiayUHo0S52JudprkhvpjIrGoU1mnnr29Fvd1U335ZFPZQY1wlkqgfGXyLg==
 
 http-errors@1.7.3:
   version "1.7.3"
