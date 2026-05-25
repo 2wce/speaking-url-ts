@@ -1182,48 +1182,49 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.59.0.tgz#4584a8a87b29188a4c1fe987a9fcf701e256d86c"
   integrity sha512-2HRCml6OztYXyJXAvdDXPKcawukWY2GpR5/nxKp4iBgiO3wcoEGkAaqctIbZcNB6KlUQBIqt8VYkNSj2397EfA==
 
-"@scalar/client-side-rendering@0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.1.9.tgz#137a0b4cd272790c82acbd74f000b3f784df0ed9"
-  integrity sha512-Gv3CK0X+BqXYkVJLTQXNM8YgdquhuGV4hKlsM8S9k5GGonj8LBDSAiuU3W48JGX1pY7hRotBGcIIU+1a1X1mcw==
+"@scalar/client-side-rendering@0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.1.12.tgz#9b809d39941cdad277e5df9ce7f8ad0b15586c30"
+  integrity sha512-prwHK4ozTU268BHZ/5OstoKB23JSidDuvddAOp0bVz9c29ZxsyzzxPtPcVgF7X16LiZnS1OzY030FoDCM+iC9Q==
   dependencies:
-    "@scalar/schemas" "0.2.0"
-    "@scalar/types" "0.11.0"
-    "@scalar/validation" "0.5.0"
+    "@scalar/schemas" "0.3.2"
+    "@scalar/types" "0.12.2"
+    "@scalar/validation" "0.6.0"
 
 "@scalar/helpers@0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.8.0.tgz#05bdd9ee966bb62dcb91e374b4a2603ed2a178ef"
   integrity sha512-gmOC6VravNB9VDl6wnt/GOj4K/hn48tj5bpW4AM4MhH8Ubil6uu7g1DSoKHwltu8Ks79KEtR6JmOrROi9R7jaQ==
 
-"@scalar/hono-api-reference@0.10.16":
-  version "0.10.16"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.10.16.tgz#2a4fc4fbdc9b7aa07c754a8850a7bedeab4e7dbc"
-  integrity sha512-pllMIMZUXrTcbn1IeOhS5WHgpkw2kdtS3kFojz04DOdJptq3MawjHEunPhvydyMlIFlb1rhjieRllhPwt/y9Lw==
+"@scalar/hono-api-reference@0.10.19":
+  version "0.10.19"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.10.19.tgz#f8219ade773c288ea323c958940ddccb88db2743"
+  integrity sha512-6EfwN/lfPvePzAxe9UE8fr/ZuAAqS6ttUwQu9JTgk2Xl/clicaVVSOc0gyGt+8GLXdysoNinjZ74we8xqNWyCA==
   dependencies:
-    "@scalar/client-side-rendering" "0.1.9"
+    "@scalar/client-side-rendering" "0.1.12"
 
-"@scalar/schemas@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.2.0.tgz#b98ea70085ebc3835178b2233150f4583da25de4"
-  integrity sha512-FOpNecNoEKo8SogHEsdWlVRN4Q4PH3dzuOBWMA5tGt1xLZu5iFnPG2X/h6+Z/mOR34c7iW+hiKTqdUZoDgT9CA==
+"@scalar/schemas@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.3.2.tgz#9859626dfd8b6c0f53ce21d59fa4d44c6ae3e335"
+  integrity sha512-iadXBgJ02XUU5C5s6/xh/PmGLzUPd7X8upXIvPWBXDcQ4FHACNgkG8PPZ/beYM8UPDDkTUPM3ygEs0G6jKwGjQ==
   dependencies:
-    "@scalar/validation" "0.5.0"
+    "@scalar/helpers" "0.8.0"
+    "@scalar/validation" "0.6.0"
 
-"@scalar/types@0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.11.0.tgz#cf397c774510ad8433e4d49be21ceaa8ba128669"
-  integrity sha512-TGZR8sys1jRlaWxLYfBo8y6D1W4UClYuDmkJ6Hmsb7oNuqokEAAK+AVYIzascVdBmaly0D1fqoqK7CzuGYHgyg==
+"@scalar/types@0.12.2":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.12.2.tgz#1dfb24e3a82e893e0f8505fe0fc467353f3deac7"
+  integrity sha512-EzLkubCb7xioiTm9eYnmn/032akaq4kkrrdclgV2uezwtniR8ErQICjhMl2AjBWL6nstHiFZ9RnPZm2Z2/KM0Q==
   dependencies:
     "@scalar/helpers" "0.8.0"
     nanoid "^5.1.6"
     type-fest "^5.3.1"
     zod "^4.3.5"
 
-"@scalar/validation@0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.5.0.tgz#9beb0de44bf876c2a11a2c20ceda1cedfa9054ea"
-  integrity sha512-48CS1B0C7im57RQCHhS0GKt+qDLxB34IX8rO91jZj9D+Y/OosQZG3Gy57gJdHqZoD7l0sPUZtF8tVYry3BxRtw==
+"@scalar/validation@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.6.0.tgz#70e8b8a7eec6b86fd76f569b614e22bb41209f06"
+  integrity sha512-tpmmG+/xRE2Kn9RpflU3AIyZv08v10+E1ZrJCx7z6+/91zHVxy0M73kC1LT4/8PbYNt85ywyC8+n+D99JdMcGA==
 
 "@sinclair/typebox@0.25.24":
   version "0.25.24"
