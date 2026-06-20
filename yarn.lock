@@ -1135,41 +1135,41 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
-"@scalar/client-side-rendering@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.2.0.tgz#fcaef93d3013cd7aa3057ba16a18f7b844e6c619"
-  integrity sha512-FNTGo+5n0m56cQtb9T0XqvlrqDOfib9iXdhg6RWB2wISQa2xXpxcEAHuXiimN2jhpI3lB/myePeVCAyOCFu4bw==
+"@scalar/client-side-rendering@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.2.4.tgz#c57603450deafda1ab0ef7bbba2ea547c3db52ce"
+  integrity sha512-IQC39aQQXKsZXOqQw0LNiZ/gQ1WxHpF+WLTo/hurn0S/FmNHlBGUAhFyt1BeDSUYxics7ixgzQatKJDggafBTw==
   dependencies:
-    "@scalar/schemas" "0.4.0"
-    "@scalar/types" "0.13.0"
+    "@scalar/schemas" "0.5.0"
+    "@scalar/types" "0.14.0"
     "@scalar/validation" "0.6.0"
 
-"@scalar/helpers@0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.8.1.tgz#80e515237fee72c036e2b051e2974ff38282b784"
-  integrity sha512-yuiuBCadP5bjAnIv23QvifVN/NaMi9xBF6b8Wdk4QOzwzLPJmp699MAdf33J0A5i2qKcvnu32iz/VkEJmQRe5g==
+"@scalar/helpers@0.8.2":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.8.2.tgz#631c42fe7605768355e8ac851bb029ea70634797"
+  integrity sha512-qNbqUjSB3S4Gr4A0oANcm5G1Ip+EqBxICYKhe9YzmnaBpbmW6shxqpiivApTvvuDf+uIhR3uMwWyVQbYcGLsxA==
 
-"@scalar/hono-api-reference@0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.11.0.tgz#21b0f5370a05fa279fe43ca525af1ca8f51204f8"
-  integrity sha512-1a+ojnRxNsmvdksmYsSil1OUiMdE4RTHWHy7oiUqGZlCshey376wWVKEQGuY5HaUtBUx7fXnd4luxi02KCc5Gw==
+"@scalar/hono-api-reference@0.11.4":
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.11.4.tgz#9f07a68024e1fe76e52e89b6d4c9c7f08334e4be"
+  integrity sha512-JD5vv5z44iY2O3++l4MqJ5NrKEucCLenLP26kDLyXZfO44ip5H5XFcPw5mRfnHMFgVhdJMWsvFf1mGLiPGDy/A==
   dependencies:
-    "@scalar/client-side-rendering" "0.2.0"
+    "@scalar/client-side-rendering" "0.2.4"
 
-"@scalar/schemas@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.4.0.tgz#8c8da63ba2eb73ee4b1962da04607e2283d78d89"
-  integrity sha512-xKonRX7zGhNX03/N15gtko7Lxz8Ck655nL7YnBSxlv7BHoKkt7n3R1bXYeHhqvhk+02HFKsKpUCuwxm4UQ6KZw==
+"@scalar/schemas@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.5.0.tgz#074ea01056df3710ca0d76b6df0fecd6b57e6c30"
+  integrity sha512-aV0PWqFpQft9a6d4Z6HOTHKDaA+K4AquxSPfBDI1c5f6lMe5l3zViww/iBQA/Yw+V1+Y2iwSVzhuxaktC1UiMg==
   dependencies:
-    "@scalar/helpers" "0.8.1"
+    "@scalar/helpers" "0.8.2"
     "@scalar/validation" "0.6.0"
 
-"@scalar/types@0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.13.0.tgz#d0f7daf7aeed01c8e6f2bf4ad9f8b538f338cebf"
-  integrity sha512-Phbv5YoBBFipOGH2FkS3omVxomKsTH6KvAcL4ybFOH3iVsrpIOW6die13PtH+lDdfWqE9MK31hVh5ZcxXY+ngQ==
+"@scalar/types@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.14.0.tgz#5263af13faf66160bf634a2b1f6af54dff550a1e"
+  integrity sha512-aS1FvHbKhBC51mWqXmhkPe6lmhCd9+u//DQ1YTiCWOz4/fXAdWfwHvW9UZ7AzzcGwGiCo9diE81xV+UvSI1qIg==
   dependencies:
-    "@scalar/helpers" "0.8.1"
+    "@scalar/helpers" "0.8.2"
     nanoid "^5.1.6"
     type-fest "^5.3.1"
     zod "^4.3.5"
@@ -2609,10 +2609,10 @@ hono-rate-limiter@0.5.3:
   resolved "https://registry.yarnpkg.com/hono-rate-limiter/-/hono-rate-limiter-0.5.3.tgz#29ee906b904edd38651f623630342b249d884b34"
   integrity sha512-M0DxbVMpPELEzLi0AJg1XyBHLGJXz7GySjsPoK+gc5YeeBsdGDGe+2RvVuCAv8ydINiwlbxqYMNxUEyYfRji/A==
 
-hono@4.12.24:
-  version "4.12.24"
-  resolved "https://registry.yarnpkg.com/hono/-/hono-4.12.24.tgz#193c8d65ab463747fdde9d05c0d7a67859270da7"
-  integrity sha512-I36D1s+HgQc55KbhEr4iybfxv/9o1zdpw+XEM6dJa91LqQD0HCoSGdxpRJCZE+aavs87j4V3Ls2OJzq8C/U4iw==
+hono@4.12.25:
+  version "4.12.25"
+  resolved "https://registry.yarnpkg.com/hono/-/hono-4.12.25.tgz#f2d9996a54e8c9c0c5f5de1c8f3a962e43a98c4e"
+  integrity sha512-2NFaIyNVgJmBs/ecmtGzlmluTFs5cHEWGTdu0t1HBwYzoGXOL5nUQBRMXsXWla5i4KkG//QMzVP88m1+I3fdAQ==
 
 http-errors@1.7.3:
   version "1.7.3"
