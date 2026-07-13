@@ -17,7 +17,7 @@
     "@changesets/cli": "2.31.0",
     "@types/node": "26.1.1",
     "lefthook": "2.1.10",
-    "turbo": "2.10.3",
+    "turbo": "2.10.4",
     "typescript": "6.0.3"
   },
   "scripts": {
