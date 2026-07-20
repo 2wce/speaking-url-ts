@@ -1140,49 +1140,49 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
-"@scalar/client-side-rendering@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.3.2.tgz#75dc960a4d9c8d760373866cbe6667c8f779258f"
-  integrity sha512-HXgfSnSQSLaTZupSmN2w4O1Gv0wXdFl+GtrZHQEoNQ4HSzgCtk9fKcmSVxaZiPjyx6eon/x3Ic+Ka5T4tXskyA==
+"@scalar/client-side-rendering@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.3.4.tgz#be56c931fdd87e10e42bfefd5f76b0d07b1d7f59"
+  integrity sha512-kb3B+FGjvAUr2DU0fe9dVKBLwot1TjOO+iHCTmY8r8FUJySmYKGQYCicRzzilOyTjvKspiZBCEr03PWaWW+1gw==
   dependencies:
-    "@scalar/schemas" "0.7.2"
-    "@scalar/types" "0.16.2"
-    "@scalar/validation" "0.6.0"
+    "@scalar/schemas" "0.7.4"
+    "@scalar/types" "0.16.4"
+    "@scalar/validation" "0.6.2"
 
-"@scalar/helpers@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.9.0.tgz#b3db11361209b4b927333487523e1e84c4ffd40f"
-  integrity sha512-M34CLRCttqC1bXthI/QSzQj0s5C6nrU2PFWf/vOT3RpycbiGDGQbqR+5RfFzpOIQvRqbHfNdcRbeiZBw+vCbkQ==
+"@scalar/helpers@0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.9.2.tgz#e030a20d47c108e3ebd085b0cd1a343e8f2f646a"
+  integrity sha512-hjyMpMZjTBZQhyByZmz5oUgRKUQJO5V5AOiJxsVEGbUmgA7sJRQeTrXLB+BEwzaKS5nm2opJeNyMBYLFNK4hiQ==
 
-"@scalar/hono-api-reference@0.11.9":
-  version "0.11.9"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.11.9.tgz#e00fe084931c2d368b211ef00fed1e8e6ece61f1"
-  integrity sha512-/Rx/kozi18sfWLP6y9qK/xhjO68i667o2aFXWnRfxW0TKL2D6A+LGtWCHQTgTONPKZe0TX9iSMSWf0vy0UOsbA==
+"@scalar/hono-api-reference@0.11.11":
+  version "0.11.11"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.11.11.tgz#ee0799fa41e28baa548044f0ea5664d33e514f75"
+  integrity sha512-yvJ2oqyG9MC4C55/Xvi/Jny5qBYDxDvoVleABhgNG24A93u9ar17qsdSppli94sQOUdX31Qw/yCTm89LHbBRiQ==
   dependencies:
-    "@scalar/client-side-rendering" "0.3.2"
+    "@scalar/client-side-rendering" "0.3.4"
 
-"@scalar/schemas@0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.7.2.tgz#3e68e30fc520c9ff1201a942b6317fabe99f4e96"
-  integrity sha512-6Ble6WcbiKgD3ypIva+wgZv1qIClmeEjXA6jrOo1bKpYUu6sh4e89LZxDK+LULa2jQl/2O5GEaa6aZ0ImlpkHg==
+"@scalar/schemas@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.7.4.tgz#b51136653bd0b89adeaaef9f6c655151553a462d"
+  integrity sha512-Or31zxR+ceGGhkVU5XBO2Zv7oyGDtjsJOjM2Rr0WRZ1/tRsQc2/FsVv+9kPmCA7sqFL8BKWlNfTXcPITI7WRHw==
   dependencies:
-    "@scalar/helpers" "0.9.0"
-    "@scalar/validation" "0.6.0"
+    "@scalar/helpers" "0.9.2"
+    "@scalar/validation" "0.6.2"
 
-"@scalar/types@0.16.2":
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.16.2.tgz#7f96ff6f609a03c20a363d76c18c789284dfa6af"
-  integrity sha512-QAlCtDVRsX/UV1N9ctLqPsKQy84eceFf4dMnTZM0JhaRfwS/Ovwp8oFf3POSpqQILNiqLFZLE6IV6p/5rNoAag==
+"@scalar/types@0.16.4":
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.16.4.tgz#28190d6c49c769929f9ef7a0738901228efdc76a"
+  integrity sha512-fLf0ANAC3iQq0sIVdmH6aGM+pFSLyD8GfGBxSWcLpI0jE0iFAzX2A3p0qVZm7vqBT4TQnn0fSwg5U+h+FZ52BA==
   dependencies:
-    "@scalar/helpers" "0.9.0"
+    "@scalar/helpers" "0.9.2"
     nanoid "^5.1.6"
     type-fest "^5.3.1"
     zod "^4.3.5"
 
-"@scalar/validation@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.6.0.tgz#70e8b8a7eec6b86fd76f569b614e22bb41209f06"
-  integrity sha512-tpmmG+/xRE2Kn9RpflU3AIyZv08v10+E1ZrJCx7z6+/91zHVxy0M73kC1LT4/8PbYNt85ywyC8+n+D99JdMcGA==
+"@scalar/validation@0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.6.2.tgz#79264de2375b5e21bcabb75e116ab3580fe3666c"
+  integrity sha512-Sc1TkcwGV6aVCO51AyKeaGiP8gpwAHxEtO5d3tZzPV+KsnlC/YokQxFxwBrbIXw73k9hmcExnJyGu3k5i6n6VA==
 
 "@sinclair/typebox@0.25.24":
   version "0.25.24"
