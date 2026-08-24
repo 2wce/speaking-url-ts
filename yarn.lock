@@ -1059,49 +1059,49 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
-"@scalar/client-side-rendering@0.3.6":
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.3.6.tgz#c6ee936d8d356635cb6d0cd3072201d7583cab88"
-  integrity sha512-CshKXof+tyu0tpgMhRSoNw6Fnn1ywVveJnb5iIJ8ue/FIVn6rP+BEQcgdIiNUPBEXHaAnz+HCGGiScKRzXRB7Q==
+"@scalar/client-side-rendering@0.3.9":
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.3.9.tgz#6afb301abae473997aff76553d859e5a603e63ed"
+  integrity sha512-Gg+VLhreiWHmHN0i9uatEoIxzsr0FaJoq0x+PkypmFgZFniD477DVCAnmWqx+KXlpFg0VtDanDHARIJXZ1fIeQ==
   dependencies:
-    "@scalar/schemas" "0.8.1"
-    "@scalar/types" "0.17.1"
-    "@scalar/validation" "0.6.2"
+    "@scalar/schemas" "0.8.3"
+    "@scalar/types" "0.18.2"
+    "@scalar/validation" "0.6.3"
 
-"@scalar/helpers@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.10.0.tgz#e60381ffbec39b0cb227d0b9900cb0818ef4b5dc"
-  integrity sha512-IAfnpIZnXY6ni+zyFMwWHBa5b/7yr4mCSvoTGR84oS9q4Quy2wjgafnr7CyfL65ney3iilBZHigZYLYqdqCu3Q==
+"@scalar/helpers@0.11.1":
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.11.1.tgz#35aa508c57653d812891fbb05df500e580586e66"
+  integrity sha512-Knwbe0IYqFk0PPDoOKLasqglBHfyf9/zwWWqFsSNi/AtdjM29wSZXN6p8DFid6iB5B9epYH9YiSgJ6tpD00TEw==
 
-"@scalar/hono-api-reference@0.11.13":
-  version "0.11.13"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.11.13.tgz#b822db7e280bef9d5225e2e488f0dfc11fa15c93"
-  integrity sha512-e8R+fG+4L4CWF9IFveECH1gGq1COlSmJ8YpD3UEz0m2WdlqONlGBhDkzYxcDifjsdPDo23+HCaNtwSMEbElY0g==
+"@scalar/hono-api-reference@0.11.16":
+  version "0.11.16"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.11.16.tgz#1bd976970e0a919802f20ed1b113cc3262f10c22"
+  integrity sha512-y0duqBJF2yQhkkk7xMFyWSx06+Y0ImOLtVKDH3d+jgTaVGbAtyxwkuKmj+Dd7eq3t9P7XnZx4YgBJ0S9WzsIQQ==
   dependencies:
-    "@scalar/client-side-rendering" "0.3.6"
+    "@scalar/client-side-rendering" "0.3.9"
 
-"@scalar/schemas@0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.8.1.tgz#95ba12f7a8161ea01782ef5e2deb25c4f33895e9"
-  integrity sha512-SGB/Verzjf6wpULdOIQfCCPvG46GTVYawirjQ8AVSFSIMduS6zz1MpL+I90Z8/zjeSbjtwRoLtjjWb2yByEjfQ==
+"@scalar/schemas@0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.8.3.tgz#7708cb0ca821e9bad5306a3d64739cc37dce7286"
+  integrity sha512-cTjgiJxXFXMqXlFZafXOyTOKm1lUfbDTbe9La+dPcQPe6q0zXAiVtys0IKILQWNrjXPidY0eaB9Va/rd16bfxw==
   dependencies:
-    "@scalar/helpers" "0.10.0"
-    "@scalar/validation" "0.6.2"
+    "@scalar/helpers" "0.11.1"
+    "@scalar/validation" "0.6.3"
 
-"@scalar/types@0.17.1":
-  version "0.17.1"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.17.1.tgz#bb4f523e7b153d84a8ee8e525bfc810ac5efc9c3"
-  integrity sha512-jqudbDtdvP/SiOTuj7Gg3dBY8IMb7oeJI/7K4QF2cOiWgnbYUQFeaYzktpNZwcCQkIJwlxYfd0i97KwlyD9GMQ==
+"@scalar/types@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.18.2.tgz#7673b064cd21219b91f0ee669ee3024944ad3849"
+  integrity sha512-q7fGMn0IygdLbYk9W4quM0w1caHDfL9FIxsYXNsgIep6uuO0T/t4BOStyf0qyzQ3pjt0B7rWFxO//EM9I7F/Tw==
   dependencies:
-    "@scalar/helpers" "0.10.0"
+    "@scalar/helpers" "0.11.1"
     nanoid "^5.1.6"
-    type-fest "^5.3.1"
+    type-fest "^5.8.0"
     zod "^4.3.5"
 
-"@scalar/validation@0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.6.2.tgz#79264de2375b5e21bcabb75e116ab3580fe3666c"
-  integrity sha512-Sc1TkcwGV6aVCO51AyKeaGiP8gpwAHxEtO5d3tZzPV+KsnlC/YokQxFxwBrbIXw73k9hmcExnJyGu3k5i6n6VA==
+"@scalar/validation@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.6.3.tgz#810bc7da3b29499718da0ec5ae6d8f66bf5a1c06"
+  integrity sha512-j3s9XPv8Wo1EG5/naBi4XGF0uXYQ2A3QZNI0NKWgCMxRHVrDJGlZEYymcHDHY7fquRm73P8U3c8xqJqB5yad6w==
 
 "@sinclair/typebox@0.25.24":
   version "0.25.24"
@@ -3489,10 +3489,10 @@ turbo@2.10.10:
     "@turbo/windows-64" "2.10.10"
     "@turbo/windows-arm64" "2.10.10"
 
-type-fest@^5.3.1:
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.4.1.tgz#aa9eaadcdc0acb0b5bd52e54f966ee3e38e125d2"
-  integrity sha512-xygQcmneDyzsEuKZrFbRMne5HDqMs++aFzefrJTgEIKjQ3rekM+RPfFCVq2Gp1VIDqddoYeppCj4Pcb+RZW0GQ==
+type-fest@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.8.0.tgz#6d517998257c33159db4d4da6f18efa33bd47df3"
+  integrity sha512-YGYEVz3Fm5iy/AybuA0oyNFq7H4CgQNfRp/qfe8nurE1kuCeNm3/vfm9X4Mtl+qLyaKJUh5xrFZwogr41SMjYA==
   dependencies:
     tagged-tag "^1.0.0"
 
