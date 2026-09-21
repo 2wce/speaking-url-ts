@@ -1235,35 +1235,35 @@
     mkdirp "^1.0.4"
     path-browserify "^1.0.1"
 
-"@turbo/darwin-64@2.10.12":
-  version "2.10.12"
-  resolved "https://registry.yarnpkg.com/@turbo/darwin-64/-/darwin-64-2.10.12.tgz#719ac12ae47caf7b4be855d672582cdbfde177ea"
-  integrity sha512-9nKgKoF6ZOUsM+or0OtNf+TTJSfGvDNP7ZFv/ZGWVwOSCkumyctQiTeHwB4UNljHTnC41AqylgbunLDHoccNrA==
+"@turbo/darwin-64@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@turbo/darwin-64/-/darwin-64-2.11.0.tgz#e037e28f9efbddbcf87c2e15176435bbac412acc"
+  integrity sha512-N9X56XfCWl9xJzzs//xBcQ/MQPXYooGYcSXmYAiTj4F+YYmYZrJEhh/gv0NVgRAjIx+D4VlSyTiXXrXQq6NaTQ==
 
-"@turbo/darwin-arm64@2.10.12":
-  version "2.10.12"
-  resolved "https://registry.yarnpkg.com/@turbo/darwin-arm64/-/darwin-arm64-2.10.12.tgz#ac2d3dde3a2407f8359ca2e3152690280cff2714"
-  integrity sha512-H4Elb1jqTZVeIC9bbcNwjSzemZ6RegoTOVHeuV5Osirt2Z8UguTyisMEkvZjPVZgMeN9J4ERZBFad40tFnkb7w==
+"@turbo/darwin-arm64@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@turbo/darwin-arm64/-/darwin-arm64-2.11.0.tgz#3678f575a1225c05eb94ce9b30bfaba663c4d0a3"
+  integrity sha512-U+wsqWEHmq5g1/2cJoH+QC1wVcj5a6yvIh+ycoqjcnjzONRfH6NXmI1/6BK6ba/vSD3Hq0WAJNeN1XI3Ty6pTg==
 
-"@turbo/linux-64@2.10.12":
-  version "2.10.12"
-  resolved "https://registry.yarnpkg.com/@turbo/linux-64/-/linux-64-2.10.12.tgz#264a0ec88a1f69f93cf57dab20be1b4c50bf226c"
-  integrity sha512-lr7KIotukvjZwEXiFSYAeOH3BWzjFVBbSzTbv0fuGFsNukYyH0+g1hB5ecqnJkgkYU+KHEMG1edOhnjiKON1wQ==
+"@turbo/linux-64@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@turbo/linux-64/-/linux-64-2.11.0.tgz#2f64075015a48d418949c8d962dbf652e41e7a91"
+  integrity sha512-shyXLedbf8/Htqqv6bcPD637GGDV6EAsCpl6HRNrSdNon1jkMALFVSVPgeni9wo8R7fnCvQfNt45zMBDUBiZKA==
 
-"@turbo/linux-arm64@2.10.12":
-  version "2.10.12"
-  resolved "https://registry.yarnpkg.com/@turbo/linux-arm64/-/linux-arm64-2.10.12.tgz#3ee53d1f930d2bb65708e904971be0e765381e37"
-  integrity sha512-f0pZDTtvzB5SuNwuXBaKbZHUCMCukgc8nMlHEuvLmj91Fzec+MEbr3cAvGNor5htEDqZnO6Lxt9N/GPI/77oGA==
+"@turbo/linux-arm64@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@turbo/linux-arm64/-/linux-arm64-2.11.0.tgz#6591b378d67c3ed40593fc71370531c4ec4fc520"
+  integrity sha512-gjTQceIaTmgfAAG93GjjotyAOsI+gjJv0kbg5ToNhAHJa6hoaDmvmZL9k7LSAeqteXFc0ROkcQ/24+NRaT4FmQ==
 
-"@turbo/windows-64@2.10.12":
-  version "2.10.12"
-  resolved "https://registry.yarnpkg.com/@turbo/windows-64/-/windows-64-2.10.12.tgz#ac0a0b7794f9a541e68e930383f48747f7e648ab"
-  integrity sha512-SDOueJRjS/QcykWf2KCRtTLmIl5YMKsLbXkXQGhDwcTXvKXZiS5ih5lBl/gkwZIpYFjqA/rAlfMzlAFcVHNe0g==
+"@turbo/windows-64@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@turbo/windows-64/-/windows-64-2.11.0.tgz#587f5316ceaa0af667fecbd49071b1eb01ac433f"
+  integrity sha512-S8tTGqrdWK/D1s7VXPyvMxQCpVPcKJhusqo0VmB/1cafNg8uFh7OUIsm/ENKS7igJ4ZOLMt4guPBVo3+0lY9jg==
 
-"@turbo/windows-arm64@2.10.12":
-  version "2.10.12"
-  resolved "https://registry.yarnpkg.com/@turbo/windows-arm64/-/windows-arm64-2.10.12.tgz#50eb6c20a20d0aab216d2b6aa13cc3100ea44106"
-  integrity sha512-0i0mVUa4kKk+/B3RwEwPMf9CB+T7ul56hn5FFHNA4VUNTOoLBEd6aNf3FaKfCatDNZ6cicCEf6if9QUTVyzzcA==
+"@turbo/windows-arm64@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@turbo/windows-arm64/-/windows-arm64-2.11.0.tgz#471613412b65235e30b541bf4b4e902cba4b340a"
+  integrity sha512-TfkGFGnz4Ay4Ozh5PdgVNpTuw+I6LPb+R4wljiB6XCeX6YGz3jDsWvtoBvkKtonMx7OP8DrlZitTNY0EwIkn2A==
 
 "@tybys/wasm-util@^0.10.1":
   version "0.10.1"
@@ -3604,17 +3604,17 @@ tsx@4.21.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
-turbo@2.10.12:
-  version "2.10.12"
-  resolved "https://registry.yarnpkg.com/turbo/-/turbo-2.10.12.tgz#22f552bd88182d58365960a02e5f45e628fb965b"
-  integrity sha512-AswgMPnpOoaVZHrrSBejETzEbuIA69OVGwfkHwfrY0A23VjWXBANzgq9+OymWOHAIArB7D1+1z498WY8fGg1Jw==
+turbo@2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/turbo/-/turbo-2.11.0.tgz#4011b256196dd8471d038b0b703e47741a43bc40"
+  integrity sha512-9ObLaUg3Tn/48EjzALs9sB3FRerV9wZ9SVTv5l94t8CG9g9Q+x+Z5y0F00l5XZuVTjSOInsMeM0Efz3U866q0Q==
   optionalDependencies:
-    "@turbo/darwin-64" "2.10.12"
-    "@turbo/darwin-arm64" "2.10.12"
-    "@turbo/linux-64" "2.10.12"
-    "@turbo/linux-arm64" "2.10.12"
-    "@turbo/windows-64" "2.10.12"
-    "@turbo/windows-arm64" "2.10.12"
+    "@turbo/darwin-64" "2.11.0"
+    "@turbo/darwin-arm64" "2.11.0"
+    "@turbo/linux-64" "2.11.0"
+    "@turbo/linux-arm64" "2.11.0"
+    "@turbo/windows-64" "2.11.0"
+    "@turbo/windows-arm64" "2.11.0"
 
 type-fest@^5.8.0:
   version "5.8.0"
