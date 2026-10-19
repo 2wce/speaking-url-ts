@@ -1171,50 +1171,50 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
-"@scalar/client-side-rendering@0.4.10":
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.4.10.tgz#654f035ca660203f81f77b8b95e7e1f6111ff0ee"
-  integrity sha512-kcRw4G7h50ZwpvnfZ28QYTtBqb6P3x4ccwh4xcBNqhWQxi3c9oo5lSrNOwInGfrFGmVV2xp92QnZdNasDm04Hw==
+"@scalar/client-side-rendering@0.4.12":
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.4.12.tgz#6f0f29683ca35be10d89103e80c2f1925ab6b828"
+  integrity sha512-FjzUNhDgMlrIqANp3Lj/2XuRoSL8glyueE6Qc62Y1HzNQEEmk2pmdCTAfrN7bU9L49X5qtNAn3KZdL8ng1taBw==
   dependencies:
-    "@scalar/helpers" "0.16.2"
-    "@scalar/schemas" "0.13.1"
-    "@scalar/types" "0.23.1"
-    "@scalar/validation" "0.6.6"
+    "@scalar/helpers" "0.16.4"
+    "@scalar/schemas" "0.14.0"
+    "@scalar/types" "0.24.0"
+    "@scalar/validation" "0.6.7"
 
-"@scalar/helpers@0.16.2":
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.16.2.tgz#bad3b4782346c5c897e0b499d883d612178e1fc6"
-  integrity sha512-jHSF4KZI/EcVI7WhhgNyw9vvuVCXmwP4rkMXwcaZJjMg1tFPHSOWqIcq123CsUwCMR34SEBAGSJR+Eskrz+7Qg==
+"@scalar/helpers@0.16.4":
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.16.4.tgz#3d314d740ff54fbbd4584de507518cea0f9bc569"
+  integrity sha512-9eILWzUcAkHEuYMMvijpSIy69t+Vkq+NudLB/7lgARFTWqXfQpIxW1L3VH7ogKyRie5+E4CNZ3PSvlw6IIfLGw==
 
-"@scalar/hono-api-reference@0.12.11":
-  version "0.12.11"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.12.11.tgz#b056e2c4e146ae06a8a13ea8686742a9997af8e2"
-  integrity sha512-mE0VvMKYSmtAZz+VJPoG2S+Bd9jg5Rf9ZA9LBNEv8q2pZpdVMF/t+5y88ta3nLZ7j4gEncCbr9wc9n8IqZKJAg==
+"@scalar/hono-api-reference@0.12.13":
+  version "0.12.13"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.12.13.tgz#e74da078a493a55afdc27ce79d03ef7d475bfe1d"
+  integrity sha512-jpjZWKckchyj1EPghvEgoKvP795q8er8WTU8seckmVSdVNS7CliAYqT29P4TBy4NKHih4O3/M69bxLU3jdgMbQ==
   dependencies:
-    "@scalar/client-side-rendering" "0.4.10"
+    "@scalar/client-side-rendering" "0.4.12"
 
-"@scalar/schemas@0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.13.1.tgz#b7ee1770beb4bf5e67dabc3ba001cb1070e6f53f"
-  integrity sha512-TpogfsVJGCbD9fk9v8zQO+Y5VR3AJpBReVdb5lfHHY+H0ToZygstw27grQafdqVKT8y6vrnyTFBUX3MSciDAaQ==
+"@scalar/schemas@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.14.0.tgz#9bfac120569b8d9ab56a279ed8efc42407e49f71"
+  integrity sha512-tYNfeIOk/G5o/DiW2Yc2tFlNvE42Ls1aHUOQSSeFugjBgv53p3u3tlu7gA5N4uMaS8mQCumURusc/cb4RmiX2g==
   dependencies:
-    "@scalar/helpers" "0.16.2"
-    "@scalar/validation" "0.6.6"
+    "@scalar/helpers" "0.16.4"
+    "@scalar/validation" "0.6.7"
 
-"@scalar/types@0.23.1":
-  version "0.23.1"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.23.1.tgz#4b4087848c0af1f686f56713527fcc3c36e7ae3f"
-  integrity sha512-AzExo7alI8gqLduVZNBW+4u4FpLPW2AkD/2OMEmr3LgcCbDRobRBDKFZ07A8+vemonJCLKxkq88yCx0cAw28vw==
+"@scalar/types@0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.24.0.tgz#b2c1aa19b7da9e2b64d200f9a32468aa00bb8015"
+  integrity sha512-x4O8ddCvh+59zwh9Xc+bG2QACxYARcPDfJBYiUzD/hzSxb6vpcms+WKgMksBfYWCZneO6e5Kt6hZFBoE9D9YCg==
   dependencies:
-    "@scalar/helpers" "0.16.2"
+    "@scalar/helpers" "0.16.4"
     nanoid "^5.1.6"
     type-fest "^5.8.0"
     zod "^4.4.3"
 
-"@scalar/validation@0.6.6":
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.6.6.tgz#134dbb1a637f4503b7ecd47c1e3882093af613d7"
-  integrity sha512-ur7Oyr1vJmvX9+GTXfDXTvVOJD6JRgMtwV44hI6uUFja4IUDvSzuZ+qDpZYQ32uhV/50oT8siFE6JfiZbeJwng==
+"@scalar/validation@0.6.7":
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/@scalar/validation/-/validation-0.6.7.tgz#790b6fed21300a0cc650b123b1cd725b7ff3b61b"
+  integrity sha512-xvmeYb0LOg9B598oVA/1fs9MvnMdtWjQYG3v2Wgftewizr7tQjsdDYT1TQahlDzqRG+r+ml6zlSkPrFiCE5jHQ==
 
 "@sinclair/typebox@0.25.24":
   version "0.25.24"
