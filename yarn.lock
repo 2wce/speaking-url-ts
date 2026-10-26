@@ -1176,14 +1176,14 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
-"@scalar/client-side-rendering@0.4.12":
-  version "0.4.12"
-  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.4.12.tgz#6f0f29683ca35be10d89103e80c2f1925ab6b828"
-  integrity sha512-FjzUNhDgMlrIqANp3Lj/2XuRoSL8glyueE6Qc62Y1HzNQEEmk2pmdCTAfrN7bU9L49X5qtNAn3KZdL8ng1taBw==
+"@scalar/client-side-rendering@0.4.13":
+  version "0.4.13"
+  resolved "https://registry.yarnpkg.com/@scalar/client-side-rendering/-/client-side-rendering-0.4.13.tgz#6ba3925de650fdbafa9250038dfae915aad27e94"
+  integrity sha512-XkFct3IMx+WS2+WsRVDESEwYDy8e3lpbbMPYKo/75WsFgYVaPSjNB9wU5fu7NDgCEn5B+UnmCQ+2rQcD7LBrzw==
   dependencies:
     "@scalar/helpers" "0.16.4"
-    "@scalar/schemas" "0.14.0"
-    "@scalar/types" "0.24.0"
+    "@scalar/schemas" "0.15.0"
+    "@scalar/types" "0.25.0"
     "@scalar/validation" "0.6.7"
 
 "@scalar/helpers@0.16.4":
@@ -1191,30 +1191,30 @@
   resolved "https://registry.yarnpkg.com/@scalar/helpers/-/helpers-0.16.4.tgz#3d314d740ff54fbbd4584de507518cea0f9bc569"
   integrity sha512-9eILWzUcAkHEuYMMvijpSIy69t+Vkq+NudLB/7lgARFTWqXfQpIxW1L3VH7ogKyRie5+E4CNZ3PSvlw6IIfLGw==
 
-"@scalar/hono-api-reference@0.12.13":
-  version "0.12.13"
-  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.12.13.tgz#e74da078a493a55afdc27ce79d03ef7d475bfe1d"
-  integrity sha512-jpjZWKckchyj1EPghvEgoKvP795q8er8WTU8seckmVSdVNS7CliAYqT29P4TBy4NKHih4O3/M69bxLU3jdgMbQ==
+"@scalar/hono-api-reference@0.12.14":
+  version "0.12.14"
+  resolved "https://registry.yarnpkg.com/@scalar/hono-api-reference/-/hono-api-reference-0.12.14.tgz#4bba3d3e26f51601177a4c2e3f2aaced65797442"
+  integrity sha512-Dw2F1mK1ND1legoHdNHPBwjVRdH1Y3KUUZmEVrs8quwF+JDAxVHIW2IXXt/Q3gDHfpiTf9bLSZi33Gn1V9A8Dw==
   dependencies:
-    "@scalar/client-side-rendering" "0.4.12"
+    "@scalar/client-side-rendering" "0.4.13"
 
-"@scalar/schemas@0.14.0":
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.14.0.tgz#9bfac120569b8d9ab56a279ed8efc42407e49f71"
-  integrity sha512-tYNfeIOk/G5o/DiW2Yc2tFlNvE42Ls1aHUOQSSeFugjBgv53p3u3tlu7gA5N4uMaS8mQCumURusc/cb4RmiX2g==
+"@scalar/schemas@0.15.0":
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/@scalar/schemas/-/schemas-0.15.0.tgz#0e283c5572894230d8447e391007c2727e0e593d"
+  integrity sha512-YxvmWVymAC536CFC84SGyt8PD57UqB5GOvr73y7Oj1Bjf8HMUUowzEt3AM3w9s21sR8ZKkncbt1R3r8sYsASnA==
   dependencies:
     "@scalar/helpers" "0.16.4"
     "@scalar/validation" "0.6.7"
 
-"@scalar/types@0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.24.0.tgz#b2c1aa19b7da9e2b64d200f9a32468aa00bb8015"
-  integrity sha512-x4O8ddCvh+59zwh9Xc+bG2QACxYARcPDfJBYiUzD/hzSxb6vpcms+WKgMksBfYWCZneO6e5Kt6hZFBoE9D9YCg==
+"@scalar/types@0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@scalar/types/-/types-0.25.0.tgz#9da27a98964dd94c5a61fb79cb66601253c8fbc2"
+  integrity sha512-EdwOVV5ajKks4MX5BorHIdMLG0L8EAxfz+NisAPV8l7Rsic50+YoWnqkY1eqB6K96iyreIKUdl7B/PIFGLqylg==
   dependencies:
     "@scalar/helpers" "0.16.4"
-    nanoid "^5.1.6"
-    type-fest "^5.8.0"
-    zod "^4.4.3"
+    nanoid "^5.1.16"
+    type-fest "^5.10.0"
+    zod "^4.6.7"
 
 "@scalar/validation@0.6.7":
   version "0.6.7"
@@ -2953,7 +2953,7 @@ nanoid@^3.3.20:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.20.tgz#dfd4444d85aa10111ef66ba85ed72e08ba0855d8"
   integrity sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==
 
-nanoid@^5.1.6:
+nanoid@^5.1.16:
   version "5.1.16"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.1.16.tgz#fe345c0a1f9007c32fbb5c139e1208bfd3f41ef7"
   integrity sha512-kVrnsrJqMR8+oLJnGEmSWw9BivK5mt7H3FZatVRjrc5wGqFYuBxX1yG7+A7Gi5AefkX6t/oCkizcQgpu0cY1dQ==
@@ -3600,10 +3600,10 @@ turbo@2.11.8:
     "@turbo/windows-64" "2.11.8"
     "@turbo/windows-arm64" "2.11.8"
 
-type-fest@^5.8.0:
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.8.0.tgz#6d517998257c33159db4d4da6f18efa33bd47df3"
-  integrity sha512-YGYEVz3Fm5iy/AybuA0oyNFq7H4CgQNfRp/qfe8nurE1kuCeNm3/vfm9X4Mtl+qLyaKJUh5xrFZwogr41SMjYA==
+type-fest@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-5.10.0.tgz#bf0131fdf662889c94c409d37402e364fb2016f7"
+  integrity sha512-NoSdpq/WEiAg5sjmBkmV/hfxv6HJH4NqPNrqjtSO5CwRmpsDfaf4begxW34KdJykH/l1yHtwBWQkCRdoXO8mPA==
   dependencies:
     tagged-tag "^1.0.0"
 
@@ -3947,7 +3947,7 @@ zod@4.1.11:
   resolved "https://registry.yarnpkg.com/zod/-/zod-4.1.11.tgz#4aab62f76cfd45e6c6166519ba31b2ea019f75f5"
   integrity sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==
 
-zod@4.6.7, zod@^4.1.1, zod@^4.4.3:
+zod@4.6.7, zod@^4.1.1, zod@^4.6.7:
   version "4.6.7"
   resolved "https://registry.yarnpkg.com/zod/-/zod-4.6.7.tgz#e806cf64a7f4e37635ce9f2f52c04c3766f75e5b"
   integrity sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==
