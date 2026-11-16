@@ -2591,10 +2591,10 @@ hono-rate-limiter@0.5.4:
   resolved "https://registry.yarnpkg.com/hono-rate-limiter/-/hono-rate-limiter-0.5.4.tgz#3753727bff79ce7a76500f9f9b1cfc092839e248"
   integrity sha512-P3/cscAmz1hA+MuM+Hn9gP/EyO2zWv2aXIFkVYuLZkPzrPa4oaWdVCS94vyDlsNBgeMnE/Hr2+LznIKQxrF0ng==
 
-hono@4.13.16:
-  version "4.13.16"
-  resolved "https://registry.yarnpkg.com/hono/-/hono-4.13.16.tgz#bbcf7651905e06723e1bb25f7f390ee4fb7c181b"
-  integrity sha512-AOLOEhvrV+iH92xXCnFr/5+3KjPKcI3xP63XJtX5spAnkznPdHijlIsUTpi7/9EhWqrTCekw5c5zh1K+YsVw7A==
+hono@4.13.18:
+  version "4.13.18"
+  resolved "https://registry.yarnpkg.com/hono/-/hono-4.13.18.tgz#c461afed809cf810215b8ec08117ab3e62437fb1"
+  integrity sha512-H9q/E1XizaWstJxUW881dmLxEj+t/TrGGnyxINkm4+sK0qUwsMtFdo2BWI9Vs3cIS19MU6b6iCijoUoEf4f3DA==
 
 http-errors@1.7.3:
   version "1.7.3"
